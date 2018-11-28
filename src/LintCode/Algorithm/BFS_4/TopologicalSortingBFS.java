@@ -4,9 +4,8 @@ import common.DirectedGraphNode;
 
 import java.util.*;
 
-public class TopologicalSorting {
+public class TopologicalSortingBFS {
     public ArrayList<DirectedGraphNode> topSort(ArrayList<DirectedGraphNode> graph) {
-        // write your code here
         Map<DirectedGraphNode, Integer> indegree = new HashMap<>();
 
         for (DirectedGraphNode node : graph) {
@@ -27,6 +26,7 @@ public class TopologicalSorting {
     private ArrayList<DirectedGraphNode> bfsTS(ArrayList<DirectedGraphNode> graph, Map<DirectedGraphNode, Integer> indegree) {
         Queue<DirectedGraphNode> q = new LinkedList<>();
         ArrayList<DirectedGraphNode> ans = new ArrayList<>();
+
         //Important: Need iterate all nodes in graph not the indegree. Indegree map can be not all.
         //cannot use for (DirectedGraphNode node : indegree.keySet())
         for (DirectedGraphNode node : graph) {

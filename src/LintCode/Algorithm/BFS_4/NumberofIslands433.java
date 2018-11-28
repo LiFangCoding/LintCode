@@ -46,7 +46,7 @@ public class NumberofIslands433 {
         while (!q.isEmpty()) {
             P p = q.poll();
             // find all neighbors
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < dx.length; i++) {
                 int nx = p.x + dx[i];
                 int ny = p.y + dy[i];
 
