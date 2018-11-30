@@ -7,7 +7,33 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class BinaryTreeLevelOrderTraversal69 {
+/**
+ * Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+ *
+ * Have you met this question in a real interview?
+ * Example
+ * Given binary tree {3,9,20,#,#,15,7},
+ *
+ *     3
+ *    / \
+ *   9  20
+ *     /  \
+ *    15   7
+ *
+ *
+ * return its level order traversal as:
+ *
+ * [
+ *   [3],
+ *   [9,20],
+ *   [15,7]
+ * ]
+ * Challenge
+ * Challenge 1: Using only 1 queue to implement it.
+ *
+ * Challenge 2: Use BFS algorithm to do it.
+ */
+public class _69 {
     public List<List<Integer>> levelOrder(TreeNode root) {
         // write your code here
         List<List<Integer>> ans = new ArrayList<>();
