@@ -97,7 +97,6 @@ public class _7 {
         return ans;
     }
 
-
     public static void main(String[] args) {
         _7 sol = new _7();
         String s = "{1,2,#}";
