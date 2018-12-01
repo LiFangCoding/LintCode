@@ -6,19 +6,19 @@ import java.util.Queue;
 /**
  * Description
  * Given a boolean 2D matrix, 0 is represented as the sea, 1 is represented as the island. If two 1 is adjacent, we consider them in the same island. We only consider up/down/left/right adjacent.
- *
+ * <p>
  * Find the number of islands.
- *
+ * <p>
  * Have you met this question in a real interview?
  * Example
  * Given graph:
- *
+ * <p>
  * [
- *   [1, 1, 0, 0, 0],
- *   [0, 1, 0, 0, 1],
- *   [0, 0, 0, 1, 1],
- *   [0, 0, 0, 0, 0],
- *   [0, 0, 0, 0, 1]
+ * [1, 1, 0, 0, 0],
+ * [0, 1, 0, 0, 1],
+ * [0, 0, 0, 1, 1],
+ * [0, 0, 0, 0, 0],
+ * [0, 0, 0, 0, 1]
  * ]
  * return 3.
  */
@@ -26,6 +26,7 @@ public class _433 {
     class P {
         int x;
         int y;
+
         public P(int x, int y) {
             this.x = x;
             this.y = y;
@@ -64,23 +65,21 @@ public class _433 {
 
         while (!q.isEmpty()) {
             P p = q.poll();
+
             // find all neighbors
             for (int i = 0; i < dx.length; i++) {
                 int nx = p.x + dx[i];
                 int ny = p.y + dy[i];
-
                 // if is valid and is 1.
-                if (isValid(grid, nx, ny)) {
-                    if (!v[nx][ny]) {
-                        v[nx][ny] = true;
-                        q.offer(new P(nx, ny));
-                    }
+                if (inBound(grid, nx, ny) && !v[nx][ny]) {
+                    v[nx][ny] = true;
+                    q.offer(new P(nx, ny));
                 }
             }
         }
     }
 
-    private boolean isValid(boolean[][] grid, int nx, int ny) {
-        return nx >= 0 && nx < grid.length && ny >=0 && ny < grid[0].length && grid[nx][ny];
+    private boolean inBound(boolean[][] grid, int nx, int ny) {
+        return nx >= 0 && nx < grid.length && ny >= 0 && ny < grid[0].length && grid[nx][ny];
     }
 }

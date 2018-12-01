@@ -58,11 +58,11 @@ public class _616 {
             ans[count] = cur;
             count++;
 
-            List<Integer> neibs = graph[cur];
-            for (int neib : neibs) {
-                indegree[neib]--;
-                if (indegree[neib] == 0) {
-                    q.offer(neib);
+            List<Integer> nbrs = graph[cur];
+            for (int nbr : nbrs) {
+                indegree[nbr]--;
+                if (indegree[nbr] == 0) {
+                    q.offer(nbr);
                 }
             }
         }
