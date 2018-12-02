@@ -1,4 +1,4 @@
-package LintCode.Algorithm.BFS_4;
+package LintCode_Algo.BFS_4;
 import  java.util.*;
 
 /**

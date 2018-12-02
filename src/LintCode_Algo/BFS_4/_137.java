@@ -1,4 +1,4 @@
-package LintCode.Algorithm.BFS_4;
+package LintCode_Algo.BFS_4;
 
 import common.UndirectedGraphNode;
 
@@ -80,8 +80,8 @@ public class _137 {
 
             for (int i = 0; i < size; i++) {
                 UndirectedGraphNode cur = q.remove();
-                ans.add(cur);
 
+                ans.add(cur);
                 for (UndirectedGraphNode neigh : cur.neighbors) {
                     if (!v.contains(neigh)) {
                         q.add(neigh);
