@@ -1,4 +1,4 @@
-package LintCode_Algo.BFS_4;
+package lintCode_algo.bfs_4;
 
 import common.UndirectedGraphNode;
 
@@ -12,7 +12,8 @@ import java.util.*;
  *
  * Nodes are labeled uniquely.
  *
- * We use # as a separator for each node, and , as a separator for node label and each neighbor of the node.
+ * We use # as a separator for each node, and ,
+ * as a separator for node label and each neighbor of the node.
  *
  * As an example, consider the serialized graph {0,1,2#1,2#2,2}.
  *
@@ -38,7 +39,6 @@ public class _137 {
     // 复制所有的点
     // 复制所有的边
     public UndirectedGraphNode cloneGraph(UndirectedGraphNode s) {
-        // write your code here
         if (s == null) {
             return null;
         }

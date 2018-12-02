@@ -1,7 +1,6 @@
-package LintCode_Algo.DFS_5;
+package lintCode_algo.dfs_5;
 import common.TreeNode;
 
-import java.util.*;
 /**
  *Given a non-empty binary search tree and a target value, find the value in the BST that is closest to the target.
  *

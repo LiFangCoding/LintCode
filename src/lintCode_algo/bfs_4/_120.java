@@ -1,4 +1,4 @@
-package LintCode_Algo.BFS_4;
+package lintCode_algo.bfs_4;
 import  java.util.*;
 
 /**
@@ -28,7 +28,7 @@ public class _120 {
             return 1;
         }
 
-        return bfsSteps(s, e ,dict);
+        return bfsSteps(s, e, dict);
     }
 
     private int bfsSteps(String s, String e, Set<String> dict) {

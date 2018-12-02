@@ -1,4 +1,4 @@
-package LintCode_Algo.BFS_4;
+package lintCode_algo.bfs_4;
 
 import common.TreeNode;
 
@@ -20,7 +20,7 @@ Design an algorithm and write code to serialize and deserialize a binary tree. W
         You can use other method to do serializaiton and deserialization.
 
         Notice
-        There is no limit of how you deserialize or serialize a binary tree, LintCode_Algo will take your output of serialize as the input of deserialize, it won't check the result of serialize.serialize
+        There is no limit of how you deserialize or serialize a binary tree, lintCode_algo will take your output of serialize as the input of deserialize, it won't check the result of serialize.serialize
 */
 public class _7 {
     public String serialize(TreeNode root) {

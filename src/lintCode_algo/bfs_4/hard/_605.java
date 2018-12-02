@@ -1,4 +1,4 @@
-package LintCode_Algo.BFS_4.Hard;
+package lintCode_algo.bfs_4.hard;
 import java.util.*;
 
 /**
@@ -44,30 +44,35 @@ public class _605 {
                 return false;
             for (int i = 1; i < seq.length; i++) {
                 // exception one.
-                if (seq[i] <= 0 || seq[i] > n)
+                if (seq[i] <= 0 || seq[i] > n) {
                     return false;
-                if (map.get(seq[i - 1]).add(seq[i]))
+                }
+                if (map.get(seq[i - 1]).add(seq[i])) {
                     indegree.put(seq[i], indegree.get(seq[i]) + 1);
+                }
             }
         }
 
         // case: [1], []
-        if (count < n)
+        if (count < n) {
             return false;
+        }
 
-        Queue<Integer> q = new ArrayDeque<Integer>();
-        for (int key : indegree.keySet())
-            if (indegree.get(key) == 0)
+        Queue<Integer> q = new ArrayDeque<>();
+        for (int key : indegree.keySet()) {
+            if (indegree.get(key) == 0) {
                 q.add(key);
+            }
+        }
 
         int cnt = 0;
         while (q.size() == 1) {
-            int ele = q.poll();
-            for (int next : map.get(ele)) {
-                indegree.put(next, indegree.get(next) - 1);
-                if (indegree.get(next) == 0) q.add(next);
+            int cur = q.poll();
+            for (int nbr : map.get(cur)) {
+                indegree.put(nbr, indegree.get(nbr) - 1);
+                if (indegree.get(nbr) == 0) q.add(nbr);
             }
-            if (ele != org[cnt]) {
+            if (cur != org[cnt]) {
                 return false;
             }
             cnt++;
