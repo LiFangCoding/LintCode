@@ -1,4 +1,4 @@
-package lintCode_algo.bfs_4.hard;
+package lintCode_algo.bfs_4.Required;
 import java.util.*;
 
 /**
@@ -24,6 +24,8 @@ import java.util.*;
  * Given org = [4,1,5,2,6,3], seqs = [[5,2,6,3],[4,1,5,2]]
  * Return true
  */
+
+//TODO: Hard
 public class _605 {
     public boolean sequenceReconstruction(int[] org, int[][] seqs) {
         // write your code here

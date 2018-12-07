@@ -1,4 +1,4 @@
-package lintCode_algo.bfs_4;
+package lintCode_algo.bfs_4.Required;
 
 import common.TreeNode;
 
