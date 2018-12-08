@@ -1,4 +1,6 @@
 package lintCode_algo.bfs_4.Optional;
+import common.UndirectedGraphNode;
+
 import java.util.*;
 
 /**
@@ -28,14 +30,6 @@ import java.util.*;
  * Return node 4
  */
 public class _618 {
-    class UndirectedGraphNode {
-      int label;
-      ArrayList<UndirectedGraphNode> neighbors;
-      UndirectedGraphNode(int x) {
-          label = x; neighbors = new ArrayList<UndirectedGraphNode>();
-      }
-    }
-
     public UndirectedGraphNode searchNode(ArrayList<UndirectedGraphNode> graph,
                                           Map<UndirectedGraphNode, Integer> values,
                                           UndirectedGraphNode node,
