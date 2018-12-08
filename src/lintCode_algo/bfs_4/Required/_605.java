@@ -72,7 +72,9 @@ public class _605 {
             int cur = q.poll();
             for (int nbr : map.get(cur)) {
                 indegree.put(nbr, indegree.get(nbr) - 1);
-                if (indegree.get(nbr) == 0) q.add(nbr);
+                if(indegree.get(nbr) == 0) {
+                    q.add(nbr);
+                }
             }
             if (cur != org[cnt]) {
                 return false;
