@@ -23,41 +23,36 @@ public class _178 {
             return false;
         }
 
-        Map<Integer, Set<Integer>> graph = initializeGraph(n, edges);
-
-        // bfs
-        Queue<Integer> queue = new LinkedList<>();
-        Set<Integer> hash = new HashSet<>();
-
-        queue.offer(0);
-        hash.add(0);
-        while (!queue.isEmpty()) {
-            int node = queue.poll();
-            for (Integer neighbor : graph.get(node)) {
-                if (hash.contains(neighbor)) {
-                    continue;
-                }
-                hash.add(neighbor);
-                queue.offer(neighbor);
-            }
+        ArrayList<Integer>[] graph = new ArrayList[n];
+        for (int i = 0; i < graph.length; i++) {
+            graph[i] = new ArrayList<>();
+        }
+        for (int[] edge : edges) {
+            int v0 = edge[0];
+            int v1 = edge[1];
+            graph[v0].add(v1);
+            graph[v1].add(v0);
         }
 
-        return (hash.size() == n);
+        return bfsConnectedNum(graph, 0) == n;
     }
 
-    private Map<Integer, Set<Integer>> initializeGraph(int n, int[][] edges) {
-        Map<Integer, Set<Integer>> graph = new HashMap<>();
-        for (int i = 0; i < n; i++) {
-            graph.put(i, new HashSet<Integer>());
-        }
+    private int bfsConnectedNum(ArrayList<Integer>[] graph, int s) {
+        Queue<Integer> q = new LinkedList();
+        Set<Integer> marked = new HashSet<>();
 
-        for (int i = 0; i < edges.length; i++) {
-            int u = edges[i][0];
-            int v = edges[i][1];
-            graph.get(u).add(v);
-            graph.get(v).add(u);
-        }
+        q.add(s);
+        marked.add(s);
 
-        return graph;
+        while (!q.isEmpty()) {
+            Integer cur = q.remove();
+            for (int nbr : graph[cur]) {
+                if (!marked.contains(nbr)) {
+                    q.add(nbr);
+                    marked.add(nbr);
+                }
+            }
+        }
+        return marked.size();
     }
 }
