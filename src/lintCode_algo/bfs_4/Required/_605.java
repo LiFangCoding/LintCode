@@ -29,11 +29,11 @@ import java.util.*;
 public class _605 {
     public boolean sequenceReconstruction(int[] org, int[][] seqs) {
         // write your code here
-        Map<Integer, Set<Integer>> map = new HashMap<Integer, Set<Integer>>();
-        Map<Integer, Integer> indegree = new HashMap<Integer, Integer>();
+        Map<Integer, Set<Integer>> map = new HashMap<>();
+        Map<Integer, Integer> indegree = new HashMap<>();
 
         for (int num : org) {
-            map.put(num, new HashSet<Integer>());
+            map.put(num, new HashSet<>());
             indegree.put(num, 0);
         }
 

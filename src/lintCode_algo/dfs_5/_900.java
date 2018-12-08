@@ -12,6 +12,33 @@ import common.TreeNode;
  * You are guaranteed to have only one unique value in the BST that is closest to the target.
  */
 public class _900 {
+    private int closestValueIter(TreeNode root, double target) {
+        if (root == null){
+            return 0;
+        }
+
+        TreeNode iter = root;
+        TreeNode upper = iter;
+        TreeNode lower = iter;
+
+        while (iter != null){
+            if (iter.val > target){
+                upper = iter;
+                iter = iter.left;
+            }else if (iter.val < target){
+                lower = iter;
+                iter = iter.right;
+            }else {
+                return iter.val;
+            }
+        }
+
+        if (Math.abs(upper.val - target) > Math.abs(target - lower.val)){
+            return lower.val;
+        }
+        return upper.val;
+    }
+
     public int closestValue(TreeNode root, double target) {
         // write your code here
         // root  == null
@@ -36,31 +63,5 @@ public class _900 {
         }
 
         return root.val;
-    }
-
-    private int closestValueNoRecursion(TreeNode root, double target) {
-        if (root == null){
-            return 0;
-        }
-
-        TreeNode upper = root;
-        TreeNode lower = root;
-
-        while (root != null){
-            if (root.val > target){
-                upper = root;
-                root = root.left;
-            }else if (root.val < target){
-                lower = root;
-                root = root.right;
-            }else {
-                return root.val;
-            }
-        }
-
-        if (Math.abs(upper.val - target) > Math.abs(target - lower.val)){
-            return lower.val;
-        }
-        return upper.val;
     }
 }
