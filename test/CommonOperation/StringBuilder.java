@@ -1,6 +1,6 @@
-package TestMethod;
+package CommonOperation;
 
-public class StringError {
+public class StringBuilder {
     public static void main(String[] args) {
         String s1 = "he";
         String s2 = "1";
@@ -11,7 +11,7 @@ public class StringError {
         s = s + s2;
         s = s + s3;
 
-        StringBuilder sb = new StringBuilder();
+        java.lang.StringBuilder sb = new java.lang.StringBuilder();
         sb.append(s1);
         sb.append(s2);
         sb.append(s3);
