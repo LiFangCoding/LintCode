@@ -28,5 +28,47 @@ import java.util.*;
  * Return node 4
  */
 public class _618 {
+    class UndirectedGraphNode {
+      int label;
+      ArrayList<UndirectedGraphNode> neighbors;
+      UndirectedGraphNode(int x) {
+          label = x; neighbors = new ArrayList<UndirectedGraphNode>();
+      }
+    }
 
+    public UndirectedGraphNode searchNode(ArrayList<UndirectedGraphNode> graph,
+                                          Map<UndirectedGraphNode, Integer> values,
+                                          UndirectedGraphNode node,
+                                          int target) {
+        // write your code here
+        if (node == null) {
+            return null;
+        }
+
+        return bfs(node, values, target);
+    }
+
+    private UndirectedGraphNode bfs(UndirectedGraphNode s, Map<UndirectedGraphNode, Integer> map, int target) {
+        Queue<UndirectedGraphNode> q = new LinkedList<>();
+        Set<UndirectedGraphNode> marked = new HashSet<>();
+
+        q.add(s);
+        marked.add(s);
+
+        while (!q.isEmpty()) {
+            // no need use size to level by level.
+            UndirectedGraphNode cur = q.remove();
+            if (map.get(cur) == target) {
+                return cur;
+            }
+
+            for (UndirectedGraphNode nbr : cur.neighbors) {
+                if (!marked.contains(nbr)) {
+                    q.add(nbr);
+                    marked.add(nbr);
+                }
+            }
+        }
+        return null;
+    }
 }
