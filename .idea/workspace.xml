@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8997d72b-14e6-43b6-8112-8df981043d20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lintCode_algo/bfs_4/Optional/_531.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lintCode_algo/bfs_4/Optional/_178.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/lintCode_algo/bfs_4/Optional/_178Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LintLeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LintLeetCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/Leetcode/_297.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/Leetcode/_297.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Optional/_242.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Optional/_242.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Optional/_531.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Optional/_531.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Optional/_598.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Optional/_598.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Optional/_618.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Optional/_618.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_120.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_120.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_127_BFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_127_BFS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_137.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_137.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_433.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_433.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_605.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_605.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_611.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_611.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_615.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_615.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_616.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_616.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_69.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_69.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/bfs_4/Required/_7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/dfs_5/_900.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LintLeetCode/lintCode_algo/dfs_5/_900.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,101 +76,45 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1083560357">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="288" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="288" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lintCode_algo/bfs_4/Required/_615.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lintCode_algo/bfs_4/Required/_616.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lintCode_algo/bfs_4/Required/_605.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Leetcode/_297.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-460">
-              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/CommonOperation/StringBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/CommonOperation/BooleanValues.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lintCode_algo/bfs_4/Optional/_242.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="807">
-              <caret line="59" column="19" lean-forward="true" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lintCode_algo/bfs_4/Optional/_598.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-955">
-              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lintCode_algo/bfs_4/Optional/_618.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lintCode_algo/bfs_4/Optional/_531.java">
+        <entry file="file://$PROJECT_DIR$/src/lintCode_algo/bfs_4/Optional/_178.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="274">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/lintCode_algo/bfs_4/Optional/_178Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -160,6 +125,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -184,6 +150,8 @@
         <option value="$PROJECT_DIR$/src/lintCode_algo/bfs_4/Optional/_618.java" />
         <option value="$PROJECT_DIR$/src/lintCode_algo/bfs_4/Optional/_598.java" />
         <option value="$PROJECT_DIR$/src/lintCode_algo/bfs_4/Optional/_531.java" />
+        <option value="$PROJECT_DIR$/test/lintCode_algo/bfs_4/Optional/_178Test.java" />
+        <option value="$PROJECT_DIR$/src/lintCode_algo/bfs_4/Optional/_178.java" />
       </list>
     </option>
   </component>
@@ -196,11 +164,10 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,12 +179,6 @@
               <item name="LintLeetCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="LintLeetCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LintLeetCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LintLeetCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LintLeetCode" type="b2602c69:ProjectViewProjectNode" />
@@ -243,23 +204,65 @@
             <path>
               <item name="LintLeetCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="LintLeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lintCode_algo" type="462c0819:PsiDirectoryNode" />
+              <item name="dfs_5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LintLeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LintLeetCode" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LintLeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LintLeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="lintCode_algo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LintLeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LintLeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="lintCode_algo" type="462c0819:PsiDirectoryNode" />
+              <item name="bfs_4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LintLeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LintLeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="lintCode_algo" type="462c0819:PsiDirectoryNode" />
+              <item name="bfs_4" type="462c0819:PsiDirectoryNode" />
+              <item name="Optional" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544264547995" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544286747099" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="lintCode_algo.bfs_4.Optional" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
@@ -275,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit._178Test.validTreeFalse">
     <configuration name="BooleanValues" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CommonOperation.BooleanValues" />
       <module name="LintLeetCode" />
@@ -289,8 +292,63 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_178Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LintLeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lintCode_algo.bfs_4.Optional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lintCode_algo.bfs_4.Optional" />
+      <option name="MAIN_CLASS_NAME" value="lintCode_algo.bfs_4.Optional._178Test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_178Test.validTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LintLeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lintCode_algo.bfs_4.Optional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lintCode_algo.bfs_4.Optional" />
+      <option name="MAIN_CLASS_NAME" value="lintCode_algo.bfs_4.Optional._178Test" />
+      <option name="METHOD_NAME" value="validTree" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_178Test.validTreeFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LintLeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lintCode_algo.bfs_4.Optional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lintCode_algo.bfs_4.Optional" />
+      <option name="MAIN_CLASS_NAME" value="lintCode_algo.bfs_4.Optional._178Test" />
+      <option name="METHOD_NAME" value="validTreeFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.BooleanValues" />
+      <item itemvalue="JUnit._178Test.validTree" />
+      <item itemvalue="JUnit._178Test.validTreeFalse" />
+      <item itemvalue="JUnit._178Test" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit._178Test.validTreeFalse" />
+        <item itemvalue="JUnit._178Test" />
+        <item itemvalue="JUnit._178Test.validTree" />
         <item itemvalue="Application.BooleanValues" />
       </list>
     </recent_temporary>
@@ -308,11 +366,46 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="_178Test_validTree - 2018.12.09 at 01h 23m 55s.xml">
+      <configuration name="_178Test.validTree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_178Test_validTree - 2018.12.09 at 01h 24m 13s.xml">
+      <configuration name="_178Test.validTree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_178Test_validTreeFalse - 2018.12.09 at 01h 28m 30s.xml">
+      <configuration name="_178Test.validTreeFalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_178Test_validTreeFalse - 2018.12.09 at 01h 29m 00s.xml">
+      <configuration name="_178Test.validTreeFalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_178Test - 2018.12.09 at 01h 29m 31s.xml">
+      <configuration name="_178Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_178Test_validTreeFalse - 2018.12.09 at 01h 30m 20s.xml">
+      <configuration name="_178Test.validTreeFalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_178Test_validTreeFalse - 2018.12.09 at 01h 30m 29s.xml">
+      <configuration name="_178Test.validTreeFalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_178Test_validTreeFalse - 2018.12.09 at 01h 31m 33s.xml">
+      <configuration name="_178Test.validTreeFalse" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25432277" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -320,21 +413,21 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Learn" order="7" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3292232" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32866243" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3299363" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3292232" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32866243" />
       <window_info anchor="bottom" id="CheckStyle" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.3292232" />
       <window_info anchor="bottom" id="Style Checker" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3299363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -347,6 +440,24 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lintCode_algo/bfs_4/Optional/_178.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/lintCode_algo/bfs_4/Optional/_178Test.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/common/ListNode.java">
@@ -485,6 +596,20 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lintCode_algo/bfs_4/Optional/_178Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lintCode_algo/bfs_4/Optional/_178.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
         </state>
       </provider>
     </entry>
