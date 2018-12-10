@@ -31,7 +31,7 @@ public class _453 {
         flat(root);
     }
 
-    // flat and return last
+    //Important: return last.
     private TreeNode flat(TreeNode node) {
         if (node == null) {
             return null;
@@ -57,4 +57,7 @@ public class _453 {
         }
         return node;
     }
+
+    // TODO: use stack to do.
+
 }
