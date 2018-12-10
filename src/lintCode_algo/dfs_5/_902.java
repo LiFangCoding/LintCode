@@ -18,6 +18,44 @@ import java.util.*;
 public class _902 {
     public int kthSmallest(TreeNode root, int k) {
         // write your code here
+        count(root);
+        return search(root, k);
+    }
+
+
+
+    // cannot map.get(null)
+    private int search(TreeNode root, int k) {
+        if (root == null) {
+            return 0;
+        }
+
+        int left = root.left == null ? 0: map.get(root.left);
+
+        if (left >= k) {
+            return search(root.left, k);
+        } else if (left == k - 1){
+            return root.val;
+        } else {
+            return search(root.right, k - left - 1);
+        }
+    }
+
+    Map<TreeNode, Integer> map = new HashMap<>();
+    private int count(TreeNode node) {
+        if (node == null) {
+            return 0;
+        }
+
+        int left = count(node.left);
+        int right = count(node.right);
+        map.put(node, left +  right + 1);
+        return left + right + 1;
+    }
+
+
+    public int kthSmallest_inorderStack(TreeNode root, int k) {
+        // write your code here
         if (root == null) {
             return 0;
         }
@@ -40,8 +78,6 @@ public class _902 {
 
         return 0;
     }
-
-
 
     private void putleft(TreeNode node, Stack<TreeNode> s) {
         while (node != null) {
