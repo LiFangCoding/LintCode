@@ -42,8 +42,9 @@ public class _605 {
         for (int[] seq : seqs) {
             count += seq.length;
             // important: when seq larger than 1, and from is not between 0- n.
-            if (seq.length >= 1 && (seq[0] <= 0 || seq[0] > n))
+            if (seq.length >= 1 && (seq[0] <= 0 || seq[0] > n)) {
                 return false;
+            }
             for (int i = 1; i < seq.length; i++) {
                 // exception one.
                 if (seq[i] <= 0 || seq[i] > n) {

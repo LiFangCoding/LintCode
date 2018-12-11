@@ -81,15 +81,17 @@ public class _7 {
         q.add(ans);
 
         for (int i = 1; i < vals.length; i++) {
-            TreeNode curr = q.remove();
+            TreeNode cur = q.remove();
             if (!vals[i].equals("#")) {
-                curr.left = new TreeNode(Integer.parseInt(vals[i]));
-                q.offer(curr.left);
+                cur.left = new TreeNode(Integer.parseInt(vals[i]));
+                q.offer(cur.left);
             }
 
-            if (!vals[++i].equals("#")) {
-                curr.right = new TreeNode(Integer.parseInt(vals[i]));
-                q.add(curr.right);
+            i++;
+
+            if (!vals[i].equals("#")) {
+                cur.right = new TreeNode(Integer.parseInt(vals[i]));
+                q.add(cur.right);
             }
         }
 

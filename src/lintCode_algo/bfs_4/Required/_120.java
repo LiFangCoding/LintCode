@@ -33,11 +33,11 @@ public class _120 {
 
     private int bfsSteps(String s, String e, Set<String> dict) {
         Queue<String> q = new LinkedList<>();
-        Set<String> vsted = new HashSet<>();
+        Set<String> marked = new HashSet<>();
         int step = 1;
 
         q.add(s);
-        vsted.add(s);
+        marked.add(s);
 
         while (!q.isEmpty()) {
             int size = q.size();
@@ -51,9 +51,9 @@ public class _120 {
                     if (nbr.equals(e)) {
                         return step + 1;
                     }
-                    if (!vsted.contains(nbr)) {
+                    if (!marked.contains(nbr)) {
                         q.add(nbr);
-                        vsted.add(nbr);
+                        marked.add(nbr);
                     }
                 }
             }
@@ -64,7 +64,7 @@ public class _120 {
 
     private List<String> getNbrs(String s, Set<String> dict, String e) {
         char[] chars = s.toCharArray();
-        List<String> ans = new ArrayList<>();
+        List<String> res = new ArrayList<>();
 
         for (int i = 0; i < chars.length; i++) {
             for (char c = 'a'; c <= 'z'; c++) {
@@ -75,11 +75,11 @@ public class _120 {
                 chars[i] = c;
                 String nbr = new String(chars);
                 if (nbr.equals(e) || dict.contains(nbr)) {
-                    ans.add(nbr);
+                    res.add(nbr);
                 }
                 chars[i] = origin;
             }
         }
-        return ans;
+        return res;
     }
 }

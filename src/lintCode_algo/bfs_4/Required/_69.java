@@ -36,17 +36,17 @@ import java.util.Queue;
 public class _69 {
     public List<List<Integer>> levelOrder(TreeNode root) {
         // write your code here
-        List<List<Integer>> ans = new ArrayList<>();
+        List<List<Integer>> res = new ArrayList<>();
 
         if (root == null) {
-            return ans;
+            return res;
         }
 
-        bfs(root, ans);
-        return ans;
+        bfs(root, res);
+        return res;
     }
 
-    private void bfs(TreeNode s, List<List<Integer>> ans) {
+    private void bfs(TreeNode s, List<List<Integer>> res) {
         Queue<TreeNode> q = new LinkedList<>();
         q.offer(s);
 
@@ -67,7 +67,7 @@ public class _69 {
                 }
             }
 
-            ans.add(level);
+            res.add(level);
         }
     }
 }

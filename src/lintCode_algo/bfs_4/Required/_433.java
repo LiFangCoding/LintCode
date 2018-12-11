@@ -41,18 +41,18 @@ public class _433 {
         int n = grid.length;
         int m = grid[0].length;
 
-        int ans = 0;
-        boolean[][] v = new boolean[grid.length][grid[0].length];
+        int count = 0;
+        boolean[][] marked = new boolean[n][m];
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                if (grid[i][j] && !v[i][j]) {
-                    ans++;
-                    bfs(grid, v, i, j);
+                if (grid[i][j] && !marked[i][j]) {
+                    count++;
+                    bfs(grid, marked, i, j);
                 }
             }
         }
-        return ans;
+        return count;
     }
 
     private void bfs(boolean[][] grid, boolean[][] v, int sx, int sy) {
@@ -66,7 +66,7 @@ public class _433 {
         while (!q.isEmpty()) {
             P p = q.poll();
 
-            // find all neighbors
+            // find all nbrs
             for (int i = 0; i < dx.length; i++) {
                 int nx = p.x + dx[i];
                 int ny = p.y + dy[i];

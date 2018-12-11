@@ -6,7 +6,7 @@ import java.util.*;
 
 /**
  * Description
- * Clone an undirected graph. Each node in the graph contains a label and a list of its neighbors.
+ * Clone an undirected graph. Each node in the graph contains a label and a list of its nbrs.
  *
  * How we serialize an undirected graph:
  *
@@ -56,10 +56,10 @@ public class _137 {
         for (UndirectedGraphNode node : nodes) {
             UndirectedGraphNode newNode = map.get(node);
 
-            List<UndirectedGraphNode> neighs = node.neighbors;
+            List<UndirectedGraphNode> neighs = node.nbrs;
             for (UndirectedGraphNode neigh : neighs) {
                 UndirectedGraphNode newNeigh = map.get(neigh);
-                newNode.neighbors.add(newNeigh);
+                newNode.nbrs.add(newNeigh);
             }
         }
 
@@ -69,11 +69,11 @@ public class _137 {
     //[1,0,2]
     private List<UndirectedGraphNode> bfsGetNodes(UndirectedGraphNode s) {
         Queue<UndirectedGraphNode> q = new LinkedList<>();
-        List<UndirectedGraphNode> ans = new ArrayList<>();
-        Set<UndirectedGraphNode> v = new HashSet<>();
+        List<UndirectedGraphNode> res = new ArrayList<>();
+        Set<UndirectedGraphNode> marked = new HashSet<>();
 
         q.add(s);
-        v.add(s);
+        marked.add(s);
 
         while (!q.isEmpty()) {
             int size = q.size();
@@ -81,16 +81,16 @@ public class _137 {
             for (int i = 0; i < size; i++) {
                 UndirectedGraphNode cur = q.remove();
 
-                ans.add(cur);
-                for (UndirectedGraphNode neigh : cur.neighbors) {
-                    if (!v.contains(neigh)) {
+                res.add(cur);
+                for (UndirectedGraphNode neigh : cur.nbrs) {
+                    if (!marked.contains(neigh)) {
                         q.add(neigh);
-                        v.add(neigh);
+                        marked.add(neigh);
                     }
                 }
             }
         }
 
-        return ans;
+        return res;
     }
 }

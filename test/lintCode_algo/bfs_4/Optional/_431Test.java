@@ -27,15 +27,15 @@ class _431Test {
         UndirectedGraphNode E = new UndirectedGraphNode(5);
         List<UndirectedGraphNode> nodes = new ArrayList<>(Arrays.asList(A, B, C, D, E));
 
-        A.neighbors.add(B);
-        A.neighbors.add(D);
-        B.neighbors.add(D);
-        B.neighbors.add(A);
-        D.neighbors.add(A);
-        D.neighbors.add(B);
+        A.nbrs.add(B);
+        A.nbrs.add(D);
+        B.nbrs.add(D);
+        B.nbrs.add(A);
+        D.nbrs.add(A);
+        D.nbrs.add(B);
 
-        C.neighbors.add(E);
-        E.neighbors.add(C);
+        C.nbrs.add(E);
+        E.nbrs.add(C);
 
         List<List<Integer>> res = new ArrayList<>();
         List<Integer> comp1 = new ArrayList<>();

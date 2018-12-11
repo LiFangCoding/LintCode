@@ -56,7 +56,7 @@ public class _618 {
                 return cur;
             }
 
-            for (UndirectedGraphNode nbr : cur.neighbors) {
+            for (UndirectedGraphNode nbr : cur.nbrs) {
                 if (!marked.contains(nbr)) {
                     q.add(nbr);
                     marked.add(nbr);

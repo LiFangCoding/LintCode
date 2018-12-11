@@ -51,21 +51,21 @@ public class _611 {
             return -1;
         }
 
-        return bfs(grid, s, d);
+        return bfsDist(grid, s, d);
     }
 
-    // bfs shortestPath
-    private int bfs(boolean[][] grid, Point s, Point d) {
+    // bfsDist shortestPath
+    private int bfsDist(boolean[][] grid, Point s, Point d) {
         Queue<Point> q = new LinkedList<>();
         int m = grid.length;
         int n = grid[0].length;
-        boolean[][] v = new boolean[m][n];
+        boolean[][] makred = new boolean[m][n];
 
         int[] dx = {1, 1, -1, -1, 2, 2, -2, -2};
         int[] dy= {2, -2, 2, -2, 1, -1, 1, -1};
 
         q.add(s);
-        v[s.x][s.y] = true;
+        makred[s.x][s.y] = true;
 
         int dist = 0;
         while (!q.isEmpty()) {
@@ -78,9 +78,9 @@ public class _611 {
                 for (int j = 0; j < dx.length; j++) {
                     int nx = cur.x + dx[j];
                     int ny = cur.y + dy[j];
-                    if (inbound(grid, nx, ny) && !v[nx][ny] && !grid[nx][ny]) {
+                    if (inbound(grid, nx, ny) && !makred[nx][ny] && !grid[nx][ny]) {
                         q.add(new Point(nx, ny));
-                        v[nx][ny] = true;
+                        makred[nx][ny] = true;
                     }
                 }
             }

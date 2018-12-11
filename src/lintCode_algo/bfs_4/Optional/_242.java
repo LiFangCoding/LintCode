@@ -25,9 +25,8 @@ import java.util.*;
 public class _242 {
     public List<ListNode> binaryTreeToLists(TreeNode root) {
         // Write your code here
-        List<ListNode> res = new ArrayList<>();
         if (root == null) {
-            return res;
+            return new ArrayList<>();
         }
 
         return bfs(root);

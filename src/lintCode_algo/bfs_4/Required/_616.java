@@ -26,8 +26,8 @@ public class _616 {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         // write your code here
         List[] graph = new ArrayList[numCourses];
-        int[] indegree = new int[numCourses];
 
+        int[] indegree = new int[numCourses];
         for (int i = 0; i < numCourses; i++) {
             graph[i] = new ArrayList<Integer>();
         }
@@ -42,8 +42,10 @@ public class _616 {
         return bfs(graph, indegree, numCourses);
     }
 
+
+
     private int[] bfs(List[] graph, int[] indegree, int numCourses) {
-        int[] ans = new int[numCourses];
+        int[] res = new int[numCourses];
         Queue<Integer> q = new LinkedList<>();
 
         for (int i = 0; i < indegree.length; i++) {
@@ -55,7 +57,7 @@ public class _616 {
         int count = 0;
         while(!q.isEmpty()) {
             int cur = q.remove();
-            ans[count] = cur;
+            res[count] = cur;
             count++;
 
             List<Integer> nbrs = graph[cur];
@@ -68,7 +70,7 @@ public class _616 {
         }
 
         if (count == numCourses) {
-            return ans;
+            return res;
         }
 
         return new int[0];

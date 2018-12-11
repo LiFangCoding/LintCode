@@ -15,9 +15,9 @@ public class _531 {
     private int bfsSteps(UndirectedGraphNode s, UndirectedGraphNode t) {
         Queue<UndirectedGraphNode> q = new LinkedList<>();
         Set<UndirectedGraphNode> marked = new HashSet<>();
+
         q.add(s);
         marked.add(s);
-
         int step = 0;
         while (!q.isEmpty()) {
             int size = q.size();
@@ -27,7 +27,7 @@ public class _531 {
                     return step;
                 }
 
-                for (UndirectedGraphNode nbr : cur.neighbors) {
+                for (UndirectedGraphNode nbr : cur.nbrs) {
                     if (!marked.contains(nbr)) {
                         if (nbr.label == t.label) {
                             return step + 1;

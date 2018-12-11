@@ -35,7 +35,7 @@ public class _431 {
             UndirectedGraphNode cur = q.remove();
             cc.add(cur.label);
 
-            for (UndirectedGraphNode nbr : cur.neighbors) {
+            for (UndirectedGraphNode nbr : cur.nbrs) {
                 if (!marked.contains(nbr)) {
                     q.add(nbr);
                     marked.add(nbr);

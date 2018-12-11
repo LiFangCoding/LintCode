@@ -41,7 +41,7 @@ public class _615 {
     }
 
     // put every indegree == 0  s into queue
-    // while, output cur, find the neighbors. decrese neigh indegree.
+    // while, output cur, find the nbrs. decrese neigh indegree.
     // If find indegree == 0, put into queue
     private int bfs(List[] graph, int[] indegree) {
         Queue<Integer> q = new LinkedList<>();

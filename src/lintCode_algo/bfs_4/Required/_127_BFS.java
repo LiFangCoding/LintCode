@@ -36,7 +36,7 @@ public class _127_BFS {
         Map<DirectedGraphNode, Integer> indegree = new HashMap<>();
 
         for (DirectedGraphNode node : graph) {
-            for (DirectedGraphNode nbr : node.neighbors) {
+            for (DirectedGraphNode nbr : node.nbrs) {
                 if (indegree.containsKey(nbr)) {
                     indegree.put(nbr, indegree.get(nbr) + 1);
                 } else {
@@ -49,7 +49,7 @@ public class _127_BFS {
     }
 
     //Important: TS no need for visited mask since it cannot go back the indegree 0 vertex.
-    //TS q add the node not integer since we need neighbors.
+    //TS q add the node not integer since we need nbrs.
     private ArrayList<DirectedGraphNode> bfsTS(ArrayList<DirectedGraphNode> graph, Map<DirectedGraphNode, Integer> indegree) {
         Queue<DirectedGraphNode> q = new LinkedList<>();
         ArrayList<DirectedGraphNode> ans = new ArrayList<>();
@@ -68,7 +68,7 @@ public class _127_BFS {
                 DirectedGraphNode cur = q.remove();
                 ans.add(cur);
 
-                for (DirectedGraphNode neigh : cur.neighbors) {
+                for (DirectedGraphNode neigh : cur.nbrs) {
                     indegree.put(neigh, indegree.get(neigh) - 1);
                     if (indegree.get(neigh) == 0) {
                         q.add(neigh);

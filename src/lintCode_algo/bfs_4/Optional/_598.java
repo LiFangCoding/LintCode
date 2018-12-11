@@ -59,10 +59,14 @@ public class _598 {
         int  step = 0;
         while (!q.isEmpty()) {
             int size = q.size();
+            //for one level.
             for (int i = 0; i < size; i++) {
                 Coor cur = q.remove();
-                if (peoples == 0) {
-                    return step;
+                if (grid[cur.x][cur.y] == 0) {
+                    peoples--;
+                    if (peoples == 0) {
+                        return step;
+                    }
                 }
                 //cannot name same i here
                 for (int dir = 0; dir < dx.length; dir++) {
@@ -71,8 +75,7 @@ public class _598 {
                     if (inBound(newx, newy, grid) && grid[newx][newy] == 0 && !marked[newx][newy]) {
                         q.add(new Coor(newx, newy));
                         marked[newx][newy] = true;
-                        peoples--;
-                        if (peoples  == 0) {
+                        if (peoples  == 1) {
                             return step + 1;
                         }
                     }
