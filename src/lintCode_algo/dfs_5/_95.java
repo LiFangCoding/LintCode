@@ -23,40 +23,23 @@ import common.TreeNode;
  * The above binary tree is serialized as {2,1,4,#,#,3,5} (in level order).
  */
 public class _95 {
-    public boolean isValidBST(TreeNode root) {
-        // write your code here
-        return searchBST(root).isBST;
-    }
 
-    class RT {
-        int min;
-        int max;
-        boolean isBST;
-        public RT(int min, int max, boolean isBST) {
-            this.min = min;
-            this.max = max;
-            this.isBST = isBST;
+    public static class sol1 {
+        public boolean isValidBST(TreeNode root) {
+            // write your code here
+            return divConq(root, Long.MIN_VALUE, Long.MAX_VALUE);
+        }
+
+        private boolean divConq(TreeNode root, long min, long max){
+            if (root == null){
+                return true;
+            }
+            if (root.val <= min || root.val >= max){
+                return false;
+            }
+            return divConq(root.left, min, root.val) &&
+                    divConq(root.right,  root.val, max);
         }
     }
 
-    private RT searchBST(TreeNode node) {
-        if (node == null) {
-            return new RT(Integer.min, null, true);
-        }
-
-        RT left = searchBST(node.left);
-        RT right = searchBST(node.right);
-
-        if (!left.isBST || !right.isBST) {
-            return new RT(null, null, false);
-        }
-
-        TreeNode leftmin = left.min == null ? Integer.MIN_VALUE : left.min.val;
-        TreeNode leftmax = left.max == null ? Integer.MIN_VALUE : left.max.val;
-
-        TreeNode rightmin = right.min == null ? Integer.MAX_VALUE : right.max.val;
-        TreeNode max = right.min == null ? Integer.MAX_VALUE : right.min.val;
-
-        return new RT();
-    }
 }
