@@ -1,5 +1,7 @@
 package lintCode_algo.dfs_combination_6;
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Give a string, you can choose to split the string after one character or two adjacent characters, and make the string to be composed of only one character or two characters. Output all possible results.
@@ -17,7 +19,7 @@ public class _680 {
             return res;
         }
 
-        addPaths(s, new ArrayList<String>(), res);
+        addPaths(s, new ArrayList<>(), res);
         return res;
     }
 
