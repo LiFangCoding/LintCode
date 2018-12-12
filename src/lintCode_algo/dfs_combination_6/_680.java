@@ -29,13 +29,12 @@ public class _680 {
 
         if (len == 0) {
             res.add(new ArrayList<String>(path));
-            return;
-        }
-
-        for (int i = 1; i <= len && i <= 2; i++) {
-            path.add(s.substring(0 , i));
-            addPaths(s.substring(i, len), path, res);
-            path.remove(path.size() - 1);
+        } else {
+            for (int i = 1; i <= len && i <= 2; i++) {
+                path.add(s.substring(0, i));
+                addPaths(s.substring(i, len), path, res);
+                path.remove(path.size() - 1);
+            }
         }
     }
 }
