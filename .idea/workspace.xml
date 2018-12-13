@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8997d72b-14e6-43b6-8112-8df981043d20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lintCode_algo/dfs_combination_6/_18.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lintCode_algo/dfs_combination_6/_582.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/lintCode_algo/dfs_combination_6/_582Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lintCode_algo/dfs_combination_6/_680.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lintCode_algo/dfs_combination_6/_680.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,26 +39,26 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
-          <entry key="java" value="83" />
+          <entry key="java" value="85" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="83" />
+          <entry key="JAVA" value="85" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="7" />
-          <entry key="java" value="7869" />
-          <entry key="txt" value="37" />
+          <entry key="java" value="8441" />
+          <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7869" />
-          <entry key="PLAIN_TEXT" value="44" />
+          <entry key="JAVA" value="8441" />
+          <entry key="PLAIN_TEXT" value="45" />
         </counts>
       </usages-collector>
     </session>
@@ -77,29 +77,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lintCode_algo/dfs_combination_6/_18.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="309">
-              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lintCode_algo/dfs_combination_6/_582.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-200">
+              <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="53" selection-end-column="9" />
+              <folding>
+                <element signature="e#746#754#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/lintCode_algo/dfs_combination_6/_17Test.java">
+        <entry file="file://$PROJECT_DIR$/test/lintCode_algo/dfs_combination_6/_582Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lintCode_algo/dfs_5/_453.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1159">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="266">
+              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -178,8 +184,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -237,6 +243,8 @@
         <option value="$PROJECT_DIR$/src/lintCode_algo/dfs_combination_6/_680.java" />
         <option value="$PROJECT_DIR$/src/lintCode_algo/dfs_combination_6/_17.java" />
         <option value="$PROJECT_DIR$/src/lintCode_algo/dfs_combination_6/_18.java" />
+        <option value="$PROJECT_DIR$/test/lintCode_algo/dfs_combination_6/_582Test.java" />
+        <option value="$PROJECT_DIR$/src/lintCode_algo/dfs_combination_6/_582.java" />
       </list>
     </option>
   </component>
@@ -279,31 +287,6 @@
               <item name="lintCode_algo" type="462c0819:PsiDirectoryNode" />
               <item name="dfs_combination_6" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="LintLeetCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LintLeetCode" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LintLeetCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LintLeetCode" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="lintCode_algo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LintLeetCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LintLeetCode" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="lintCode_algo" type="462c0819:PsiDirectoryNode" />
-              <item name="Optional" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LintLeetCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LintLeetCode" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="lintCode_algo" type="462c0819:PsiDirectoryNode" />
-              <item name="dfs_5" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -316,14 +299,14 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544686437914" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544702613050" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -349,20 +332,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit._17Test.subsets">
-    <configuration name="StringSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CommonOperation.StringSubstring" />
-      <module name="LintLeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CommonOperation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit._582Test.wordBreak">
     <configuration name="_136Test.partition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LintLeetCode" />
       <extension name="coverage">
@@ -425,20 +395,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_582Test.wordBreak" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LintLeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lintCode_algo.dfs_combination_6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lintCode_algo.dfs_combination_6" />
+      <option name="MAIN_CLASS_NAME" value="lintCode_algo.dfs_combination_6._582Test" />
+      <option name="METHOD_NAME" value="wordBreak" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.StringSubstring" />
       <item itemvalue="JUnit._136Test.partition" />
       <item itemvalue="JUnit._153Test.combinationSum2" />
       <item itemvalue="JUnit._17Test" />
       <item itemvalue="JUnit._17Test.subsets" />
+      <item itemvalue="JUnit._582Test.wordBreak" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit._582Test.wordBreak" />
         <item itemvalue="JUnit._17Test.subsets" />
         <item itemvalue="JUnit._17Test" />
         <item itemvalue="JUnit._153Test.combinationSum2" />
         <item itemvalue="JUnit._136Test.partition" />
-        <item itemvalue="Application.StringSubstring" />
       </list>
     </recent_temporary>
   </component>
@@ -558,28 +544,17 @@
       <option name="project" value="LOCAL" />
       <updated>1544625799303</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="_18">
+      <created>1544698900345</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1544698900345</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_153Test_combinationSum2 - 2018.12.12 at 23h 03m 30s.xml">
-      <configuration name="_153Test.combinationSum2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="_153Test_combinationSum2 - 2018.12.12 at 23h 06m 12s.xml">
-      <configuration name="_153Test.combinationSum2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="_17Test_subsets - 2018.12.12 at 23h 20m 04s.xml">
-      <configuration name="_17Test.subsets" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="_17Test_subsets - 2018.12.12 at 23h 21m 58s.xml">
-      <configuration name="_17Test.subsets" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="_17Test_subsets - 2018.12.12 at 23h 24m 53s.xml">
-      <configuration name="_17Test.subsets" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="_17Test - 2018.12.12 at 23h 30m 47s.xml">
-      <configuration name="_17Test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="_17Test_subsets - 2018.12.12 at 23h 35m 08s.xml">
       <configuration name="_17Test.subsets" configurationId="JUnit" />
     </history-entry>
@@ -591,6 +566,24 @@
     </history-entry>
     <history-entry file="_17Test_subsets - 2018.12.12 at 23h 41m 30s.xml">
       <configuration name="_17Test.subsets" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_582Test_wordBreak - 2018.12.13 at 20h 38m 54s.xml">
+      <configuration name="_582Test.wordBreak" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_582Test_wordBreak - 2018.12.13 at 20h 40m 22s.xml">
+      <configuration name="_582Test.wordBreak" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_582Test_wordBreak - 2018.12.13 at 20h 40m 54s.xml">
+      <configuration name="_582Test.wordBreak" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_582Test_wordBreak - 2018.12.13 at 20h 45m 40s.xml">
+      <configuration name="_582Test.wordBreak" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_582Test_wordBreak - 2018.12.13 at 20h 47m 40s.xml">
+      <configuration name="_582Test.wordBreak" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="_582Test_wordBreak - 2018.12.13 at 21h 00m 17s.xml">
+      <configuration name="_582Test.wordBreak" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -606,7 +599,7 @@
     <frame x="-323" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1980728" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1980728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -617,8 +610,8 @@
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.40320593" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2651048" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.45869297" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2643794" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45812312" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3292232" />
@@ -629,7 +622,7 @@
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.3292232" />
       <window_info anchor="bottom" id="Style Checker" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32799014" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32795155" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -657,7 +650,8 @@
     <MESSAGE value="_135" />
     <MESSAGE value="_153" />
     <MESSAGE value="_17" />
-    <option name="LAST_COMMIT_MESSAGE" value="_17" />
+    <MESSAGE value="_18" />
+    <option name="LAST_COMMIT_MESSAGE" value="_18" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -675,27 +669,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lintCode_algo/dfs_5/_480.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/lintCode_algo/dfs_5/_596Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lintCode_algo/dfs_5/_901.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -1068,7 +1041,27 @@
     <entry file="file://$PROJECT_DIR$/src/lintCode_algo/dfs_combination_6/_18.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lintCode_algo/dfs_combination_6/_582Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lintCode_algo/dfs_combination_6/_582.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="53" selection-end-column="9" />
+          <folding>
+            <element signature="e#746#754#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
