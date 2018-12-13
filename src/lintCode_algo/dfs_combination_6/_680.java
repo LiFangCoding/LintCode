@@ -24,7 +24,6 @@ public class _680 {
     }
 
     private void addPaths(String s, List<String> path, List<List<String>> res) {
-
         int len = s.length();
 
         if (len == 0) {
