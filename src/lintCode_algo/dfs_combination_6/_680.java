@@ -27,7 +27,7 @@ public class _680 {
         int len = s.length();
 
         if (len == 0) {
-            res.add(new ArrayList<String>(path));
+            res.add(new ArrayList<>(path));
         } else {
             for (int i = 1; i <= len && i <= 2; i++) {
                 path.add(s.substring(0, i));

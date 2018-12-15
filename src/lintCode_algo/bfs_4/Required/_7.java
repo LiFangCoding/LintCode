@@ -76,7 +76,7 @@ public class _7 {
         }
 
         String[] vals = data.substring(1, data.length() - 1).split(",");
-        if (vals == null || vals.length == 0) {
+        if (vals.length == 0) {
             return null;
         }
 

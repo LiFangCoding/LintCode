@@ -18,7 +18,7 @@ public class _582 {
     public List<String> wordBreak(String s, Set<String> wordDict) {
         // write your code here
         if (s == null || wordDict == null) {
-            return new ArrayList<String>();
+            return new ArrayList<>();
         }
         return search(s, wordDict);
     }
@@ -26,7 +26,7 @@ public class _582 {
     // Important: this is not combinational search. So no need to use void. And be care of the
     // duplicate call.
     private List<String> search(String s, Set<String> dict) {
-        List<String> res = new ArrayList<String>();
+        List<String> res = new ArrayList<>();
         int len = s.length();
         if (len == 0) {
             return res;
