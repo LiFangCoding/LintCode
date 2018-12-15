@@ -5,16 +5,12 @@ import java.util.List;
 
 /**
  * Given a string s, partition s such that every substring of the partition is a palindrome.
- * <p>
- * Return all possible palindrome partitioning of s.
- * <p>
- * Example
- * Given s = "aab", return:
- * <p>
- * [
- * ["aa","b"],
- * ["a","a","b"]
- * ]
+ *
+ * <p>Return all possible palindrome partitioning of s.
+ *
+ * <p>Example Given s = "aab", return:
+ *
+ * <p>[ ["aa","b"], ["a","a","b"] ]
  */
 public class _136 {
     public List<List<String>> partition(String s) {

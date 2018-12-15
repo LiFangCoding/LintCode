@@ -6,26 +6,14 @@ import java.util.List;
 
 /**
  * Given a set of distinct integers, return all possible subsets.
- * <p>
- * Example
- * If S = [1,2,3], a solution is:
- * <p>
- * [
- * [3],
- * [1],
- * [2],
- * [1,2,3],
- * [1,3],
- * [2,3],
- * [1,2],
- * []
- * ]
- * Challenge
- * Can you do it in both recursively and iteratively?
- * <p>
- * Notice
- * Elements in a subset must be in non-descending order.
- * The solution set must not contain duplicate subsets.
+ *
+ * <p>Example If S = [1,2,3], a solution is:
+ *
+ * <p>[ [3], [1], [2], [1,2,3], [1,3], [2,3], [1,2], [] ] Challenge Can you do it in both
+ * recursively and iteratively?
+ *
+ * <p>Notice Elements in a subset must be in non-descending order. The solution set must not contain
+ * duplicate subsets.
  */
 public class _17 {
     public static class sol0 {
@@ -39,10 +27,7 @@ public class _17 {
 
         // 1. 递归的定义
         // 以 subset 开头的，配上 nums 以 index 开始的数所有组合放到 results 里
-        private void dfs(int[] nums,
-                         int index,
-                         List<Integer> subset,
-                         List<List<Integer>> results) {
+        private void dfs(int[] nums, int index, List<Integer> subset, List<List<Integer>> results) {
             // 3. 递归的出口
             if (index == nums.length) {
                 results.add(new ArrayList<Integer>(subset));

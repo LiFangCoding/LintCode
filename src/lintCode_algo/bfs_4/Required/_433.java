@@ -4,35 +4,18 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * Description
- * Given a boolean 2D matrix, 0 is represented as the sea, 1 is represented as the island. If two 1 is adjacent, we consider them in the same island. We only consider up/down/left/right adjacent.
- * <p>
- * Find the number of islands.
- * <p>
- * Have you met this question in a real interview?
- * Example
- * Given graph:
- * <p>
- * [
- * [1, 1, 0, 0, 0],
- * [0, 1, 0, 0, 1],
- * [0, 0, 0, 1, 1],
- * [0, 0, 0, 0, 0],
- * [0, 0, 0, 0, 1]
- * ]
- * return 3.
+ * Description Given a boolean 2D matrix, 0 is represented as the sea, 1 is represented as the
+ * island. If two 1 is adjacent, we consider them in the same island. We only consider
+ * up/down/left/right adjacent.
+ *
+ * <p>Find the number of islands.
+ *
+ * <p>Have you met this question in a real interview? Example Given graph:
+ *
+ * <p>[ [1, 1, 0, 0, 0], [0, 1, 0, 0, 1], [0, 0, 0, 1, 1], [0, 0, 0, 0, 0], [0, 0, 0, 0, 1] ] return
+ * 3.
  */
 public class _433 {
-    class P {
-        int x;
-        int y;
-
-        public P(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-    }
-
     public int numIslands(boolean[][] grid) {
         // write your code here
         if (grid == null || grid.length == 0 || grid[0].length == 0) {
@@ -81,5 +64,15 @@ public class _433 {
 
     private boolean inBound(boolean[][] grid, int nx, int ny) {
         return nx >= 0 && nx < grid.length && ny >= 0 && ny < grid[0].length && grid[nx][ny];
+    }
+
+    class P {
+        int x;
+        int y;
+
+        public P(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
     }
 }

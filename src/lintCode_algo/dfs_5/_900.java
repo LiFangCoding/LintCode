@@ -1,19 +1,19 @@
 package lintCode_algo.dfs_5;
+
 import common.TreeNode;
 
 /**
- *Given a non-empty binary search tree and a target value, find the value in the BST that is closest to the target.
+ * Given a non-empty binary search tree and a target value, find the value in the BST that is
+ * closest to the target.
  *
- * Example
- * Given root = {1}, target = 4.428571, return 1.
+ * <p>Example Given root = {1}, target = 4.428571, return 1.
  *
- * Notice
- * Given target value is a floating point.
- * You are guaranteed to have only one unique value in the BST that is closest to the target.
+ * <p>Notice Given target value is a floating point. You are guaranteed to have only one unique
+ * value in the BST that is closest to the target.
  */
 public class _900 {
     private int closestValueIter(TreeNode root, double target) {
-        if (root == null){
+        if (root == null) {
             return 0;
         }
 
@@ -21,19 +21,19 @@ public class _900 {
         TreeNode upper = iter;
         TreeNode lower = iter;
 
-        while (iter != null){
-            if (iter.val > target){
+        while (iter != null) {
+            if (iter.val > target) {
                 upper = iter;
                 iter = iter.left;
-            }else if (iter.val < target){
+            } else if (iter.val < target) {
                 lower = iter;
                 iter = iter.right;
-            }else {
+            } else {
                 return iter.val;
             }
         }
 
-        if (Math.abs(upper.val - target) > Math.abs(target - lower.val)){
+        if (Math.abs(upper.val - target) > Math.abs(target - lower.val)) {
             return lower.val;
         }
         return upper.val;

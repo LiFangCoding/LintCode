@@ -1,7 +1,8 @@
 package lintCode_algo.bfs_4.Optional;
+
 import common.UndirectedGraphNode;
 
-import  java.util.*;
+import java.util.*;
 
 public class _431 {
     public List<List<Integer>> connectedSet(List<UndirectedGraphNode> nodes) {
@@ -22,9 +23,9 @@ public class _431 {
         return ans;
     }
 
-    //CC is for connected component
+    // CC is for connected component
     private List<Integer> bfsCC(UndirectedGraphNode s, Set<UndirectedGraphNode> marked) {
-        //Important: list of node or list of node value.
+        // Important: list of node or list of node value.
         List<Integer> cc = new ArrayList<>();
         Queue<UndirectedGraphNode> q = new LinkedList<>();
 

@@ -6,39 +6,22 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * Given a knight in a chessboard (a binary matrix with 0 as empty and 1 as barrier) with a source position, find the shortest path to a destination position, return the length of the route.
+ * Given a knight in a chessboard (a binary matrix with 0 as empty and 1 as barrier) with a source
+ * position, find the shortest path to a destination position, return the length of the route.
  * Return -1 if knight can not reached.
  *
- * source and destination must be empty.
- * Knight can not enter the barrier.
+ * <p>source and destination must be empty. Knight can not enter the barrier.
  *
- * Have you met this question in a real interview?
- * Clarification
- * If the knight is at (x, y), he can get to the following positions in one step:
+ * <p>Have you met this question in a real interview? Clarification If the knight is at (x, y), he
+ * can get to the following positions in one step:
  *
- * (x + 1, y + 2)
- * (x + 1, y - 2)
- * (x - 1, y + 2)
- * (x - 1, y - 2)
- * (x + 2, y + 1)
- * (x + 2, y - 1)
- * (x - 2, y + 1)
- * (x - 2, y - 1)
- * Example
- * [[0,0,0],
- *  [0,0,0],
- *  [0,0,0]]
- * source = [2, 0] destination = [2, 2] return 2
+ * <p>(x + 1, y + 2) (x + 1, y - 2) (x - 1, y + 2) (x - 1, y - 2) (x + 2, y + 1) (x + 2, y - 1) (x -
+ * 2, y + 1) (x - 2, y - 1) Example [[0,0,0], [0,0,0], [0,0,0]] source = [2, 0] destination = [2, 2]
+ * return 2
  *
- * [[0,1,0],
- *  [0,0,0],
- *  [0,0,0]]
- * source = [2, 0] destination = [2, 2] return 6
+ * <p>[[0,1,0], [0,0,0], [0,0,0]] source = [2, 0] destination = [2, 2] return 6
  *
- * [[0,1,0],
- *  [0,0,1],
- *  [0,0,0]]
- * source = [2, 0] destination = [2, 2] return -1
+ * <p>[[0,1,0], [0,0,1], [0,0,0]] source = [2, 0] destination = [2, 2] return -1
  */
 public class _611 {
     public int shortestPath(boolean[][] grid, Point s, Point d) {
@@ -62,7 +45,7 @@ public class _611 {
         boolean[][] makred = new boolean[m][n];
 
         int[] dx = {1, 1, -1, -1, 2, 2, -2, -2};
-        int[] dy= {2, -2, 2, -2, 1, -1, 1, -1};
+        int[] dy = {2, -2, 2, -2, 1, -1, 1, -1};
 
         q.add(s);
         makred[s.x][s.y] = true;
@@ -92,6 +75,6 @@ public class _611 {
     private boolean inbound(boolean[][] grid, int x, int y) {
         int m = grid.length;
         int n = grid[0].length;
-        return x >= 0 && x < m && y >=0 && y < n;
+        return x >= 0 && x < m && y >= 0 && y < n;
     }
 }

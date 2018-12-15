@@ -5,20 +5,17 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Description
- * Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
- * <p>
- * The same repeated number may be chosen from C unlimited number of times.
- * <p>
- * All numbers (including target) will be positive integers.
- * Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak).
- * The solution set must not contain duplicate combinations.
- * Have you met this question in a real interview?
- * Example
- * Given candidate set [2,3,6,7] and target 7, a solution set is:
- * <p>
- * [7]
- * [2, 2, 3]
+ * Description Given a set of candidate numbers (C) and a target number (T), find all unique
+ * combinations in C where the candidate numbers sums to T.
+ *
+ * <p>The same repeated number may be chosen from C unlimited number of times.
+ *
+ * <p>All numbers (including target) will be positive integers. Elements in a combination (a1, a2, …
+ * , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak). The solution set must not contain
+ * duplicate combinations. Have you met this question in a real interview? Example Given candidate
+ * set [2,3,6,7] and target 7, a solution set is:
+ *
+ * <p>[7] [2, 2, 3]
  */
 public class _135 {
     List<List<Integer>> res = new ArrayList<>();

@@ -6,19 +6,19 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Given a digit string excluded 01, return all possible letter combinations that the number could represent.
- * <p>
- * A mapping of digit to letters (just like on the telephone buttons) is given below.
- * <p>
- * Cellphone
- * <p>
- * Example
- * Given "23"
- * <p>
- * Return ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
- * <p>
- * Notice
- * Although the above answer is in lexicographical order, your answer could be in any order you want.
+ * Given a digit string excluded 01, return all possible letter combinations that the number could
+ * represent.
+ *
+ * <p>A mapping of digit to letters (just like on the telephone buttons) is given below.
+ *
+ * <p>Cellphone
+ *
+ * <p>Example Given "23"
+ *
+ * <p>Return ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
+ *
+ * <p>Notice Although the above answer is in lexicographical order, your answer could be in any
+ * order you want.
  */
 public class _425 {
     public static class Sol1 {
@@ -83,7 +83,6 @@ public class _425 {
                     search(digits, start + 1, path + candidates.substring(i, i + 1));
                 }
             }
-
         }
     }
 }

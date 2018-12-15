@@ -2,27 +2,32 @@ package lintCode_algo.bfs_4.Required;
 
 import common.TreeNode;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
-Design an algorithm and write code to serialize and deserialize a binary tree. Writing the tree to a file is called 'serialization' and reading back from the file to reconstruct the exact same binary tree is 'deserialization'.
-
-        Example
-        An example of testdata: Binary tree {3,9,20,#,#,15,7}, denote the following structure:
-
-        3
-        / \
-        9  20
-        /  \
-        15   7
-        Our data serialization use bfs traversal. This is just for when you got wrong answer and want to debug the input.
-
-        You can use other method to do serializaiton and deserialization.
-
-        Notice
-        There is no limit of how you deserialize or serialize a binary tree, lintCode_algo will take your output of serialize as the input of deserialize, it won't check the result of serialize.serialize
-*/
+ * Design an algorithm and write code to serialize and deserialize a binary tree. Writing the tree
+ * to a file is called 'serialization' and reading back from the file to reconstruct the exact same
+ * binary tree is 'deserialization'.
+ *
+ * <p>Example An example of testdata: Binary tree {3,9,20,#,#,15,7}, denote the following structure:
+ *
+ * <p>3 / \ 9 20 / \ 15 7 Our data serialization use bfs traversal. This is just for when you got
+ * wrong answer and want to debug the input.
+ *
+ * <p>You can use other method to do serializaiton and deserialization.
+ *
+ * <p>Notice There is no limit of how you deserialize or serialize a binary tree, lintCode_algo will
+ * take your output of serialize as the input of deserialize, it won't check the result of
+ * serialize.serialize
+ */
 public class _7 {
+    public static void main(String[] args) {
+        _7 sol = new _7();
+        String s = "{1,2,#}";
+        sol.deserialize(s);
+    }
+
     public String serialize(TreeNode root) {
         // write your code here
         if (root == null) {
@@ -59,11 +64,10 @@ public class _7 {
     }
 
     /**
-     * This method will be invoked second, the argument data is what exactly
-     * you serialized at method "serialize", that means the data is not given by
-     * system, it's given by your own serialize method. So the format of data is
-     * designed by yourself, and deserialize it here as you serialize it in
-     * "serialize" method.
+     * This method will be invoked second, the argument data is what exactly you serialized at method
+     * "serialize", that means the data is not given by system, it's given by your own serialize
+     * method. So the format of data is designed by yourself, and deserialize it here as you serialize
+     * it in "serialize" method.
      */
     public TreeNode deserialize(String data) {
         // write your code here
@@ -96,11 +100,5 @@ public class _7 {
         }
 
         return ans;
-    }
-
-    public static void main(String[] args) {
-        _7 sol = new _7();
-        String s = "{1,2,#}";
-        sol.deserialize(s);
     }
 }

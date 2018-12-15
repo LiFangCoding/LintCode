@@ -5,35 +5,19 @@ import common.TreeNode;
 /**
  * Given a binary tree, find the subtree with minimum sum. Return the root of the subtree.
  *
- * Example
- * Given a binary tree:
+ * <p>Example Given a binary tree:
  *
- *      1
- *    /   \
- *  -5     2
- *  / \   /  \
- * 0   2 -4  -5
- * return the node 1.
+ * <p>1 / \ -5 2 / \ / \ 0 2 -4 -5 return the node 1.
  */
-
 public class _596 {
+
+    TreeNode minNode = null;
+    int minSum = Integer.MAX_VALUE;
 
     public TreeNode findSubtree(TreeNode root) {
         // write your code here
         ResultType res = findSum(root);
         return res.minNode;
-    }
-
-
-    class ResultType {
-        int sum;
-        int minSum;
-        TreeNode minNode;
-        public ResultType(int cur, int min, TreeNode node) {
-            sum = cur;
-            minSum = min;
-            minNode = node;
-        }
     }
 
     private ResultType findSum(TreeNode root) {
@@ -61,9 +45,6 @@ public class _596 {
         }
     }
 
-    TreeNode minNode = null;
-    int minSum = Integer.MAX_VALUE;
-
     private int getSumAndCpr(TreeNode node) {
         if (node == null) {
             return 0;
@@ -78,5 +59,17 @@ public class _596 {
         }
 
         return sum;
+    }
+
+    class ResultType {
+        int sum;
+        int minSum;
+        TreeNode minNode;
+
+        public ResultType(int cur, int min, TreeNode node) {
+            sum = cur;
+            minSum = min;
+            minNode = node;
+        }
     }
 }

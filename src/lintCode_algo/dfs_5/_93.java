@@ -1,12 +1,12 @@
 package lintCode_algo.dfs_5;
-import common.TreeNode;
 
-import java.util.*;
+import common.TreeNode;
 
 /**
  * Given a binary tree, determine if it is height-balanced.
  *
- * For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
+ * <p>For this problem, a height-balanced binary tree is defined as a binary tree in which the depth
+ * of the two subtrees of every node never differ by more than 1.
  */
 public class _93 {
     public boolean isBalanced(TreeNode root) {
@@ -29,7 +29,6 @@ public class _93 {
         return new Rt(Math.max(left.h, right.h) + 1, true);
     }
 
-
     class Rt {
         int h;
         boolean isB;
@@ -39,5 +38,4 @@ public class _93 {
             this.isB = isB;
         }
     }
-
 }

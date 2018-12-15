@@ -1,26 +1,22 @@
 package lintCode_algo.bfs_4.Optional;
+
 import common.ListNode;
 import common.TreeNode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 /**
- * Given a binary tree, design an algorithm which creates a linked list of all the nodes at each depth (e.g., if you have a tree with depth D, you'll have D linked lists).
+ * Given a binary tree, design an algorithm which creates a linked list of all the nodes at each
+ * depth (e.g., if you have a tree with depth D, you'll have D linked lists).
  *
- * Example
- * Given binary tree:
+ * <p>Example Given binary tree:
  *
- *     1
- *    / \
- *   2   3
- *  /
- * 4
- * return
+ * <p>1 / \ 2 3 / 4 return
  *
- * [
- *   1->null,
- *   2->3->null,
- *   4->null
- * ]
+ * <p>[ 1->null, 2->3->null, 4->null ]
  */
 public class _242 {
     public List<ListNode> binaryTreeToLists(TreeNode root) {
@@ -39,7 +35,7 @@ public class _242 {
 
         while (!q.isEmpty()) {
             int size = q.size();
-            //two lines important. else dummy together. Put outside of for loop. Set the glocal now.
+            // two lines important. else dummy together. Put outside of for loop. Set the glocal now.
             ListNode dummy = new ListNode(0);
             ListNode iter = dummy;
             for (int i = 0; i < size; i++) {
