@@ -25,13 +25,13 @@ public class _18 {
             return res;
         }
         Arrays.sort(nums);
-        search(nums, 0, new ArrayList<Integer>(), false);
+        search(nums, 0, new ArrayList<>(), false);
         return res;
     }
 
     private void search(int[] nums, int start, ArrayList<Integer> path, boolean selected) {
         if (start == nums.length) {
-            res.add(new ArrayList<Integer>(path));
+            res.add(new ArrayList<>(path));
         } else {
             if (start != 0 && nums[start] == nums[start - 1]) {
                 if (!selected) {

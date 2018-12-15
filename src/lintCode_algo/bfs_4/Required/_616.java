@@ -32,8 +32,7 @@ public class _616 {
         }
 
         int n = prerequisites.length;
-        for (int i = 0; i < n; i++) {
-            int[] prereq = prerequisites[i];
+        for (int[] prereq : prerequisites) {
             graph[prereq[1]].add(prereq[0]);
             indegree[prereq[0]]++;
         }

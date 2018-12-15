@@ -40,7 +40,7 @@ public class _578 {
                 return new RT(true, true, root);
             } else if (right.lca != null) {
                 return right;
-            } else if (left.lca != null) {
+            } else {
                 return left;
             }
         }

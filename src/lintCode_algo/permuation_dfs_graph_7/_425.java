@@ -37,7 +37,7 @@ public class _425 {
 
         private void search(int start, String input, String[] map, String path, List<String> res) {
             if (start == input.length()) {
-                res.add(new String(path));
+                res.add(path);
             } else {
                 int d = input.charAt(start) - '0';
                 for (char c : map[d].toCharArray()) {
@@ -71,7 +71,7 @@ public class _425 {
 
         private void search(String digits, int start, String path) {
             if (start == digits.length()) {
-                res.add(new String(path));
+                res.add(path);
             } else {
                 int num = digits.charAt(start) - '0';
 

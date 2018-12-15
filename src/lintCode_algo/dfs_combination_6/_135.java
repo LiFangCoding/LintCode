@@ -26,7 +26,7 @@ public class _135 {
             return res;
         }
         Arrays.sort(input);
-        search(0, input, target, new ArrayList<Integer>());
+        search(0, input, target, new ArrayList<>());
         return res;
     }
 

@@ -18,7 +18,7 @@ public class _152 {
 
     public List<List<Integer>> combine(int n, int k) {
         // write your code here
-        search(1, n, k, new ArrayList<Integer>());
+        search(1, n, k, new ArrayList<>());
         return res;
     }
 

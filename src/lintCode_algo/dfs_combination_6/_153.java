@@ -29,14 +29,14 @@ public class _153 {
 
         Arrays.sort(input);
         // should be new ArrayList<Integer>()
-        search(0, false, input, target, new ArrayList<Integer>());
+        search(0, false, input, target, new ArrayList<>());
         // always forget return
         return res;
     }
 
     private void search(int start, boolean selected, int[] input, int target, List<Integer> path) {
         if (target == 0) {
-            res.add(new ArrayList<Integer>(path));
+            res.add(new ArrayList<>(path));
         } else if (target < 0) {
             return;
         } else {

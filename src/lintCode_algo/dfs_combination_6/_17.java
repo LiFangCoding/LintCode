@@ -21,7 +21,7 @@ public class _17 {
         public List<List<Integer>> subsets(int[] nums) {
             List<List<Integer>> results = new ArrayList<>();
             Arrays.sort(nums);
-            dfs(nums, 0, new ArrayList<Integer>(), results);
+            dfs(nums, 0, new ArrayList<>(), results);
             return results;
         }
 
@@ -30,7 +30,7 @@ public class _17 {
         private void dfs(int[] nums, int index, List<Integer> subset, List<List<Integer>> results) {
             // 3. 递归的出口
             if (index == nums.length) {
-                results.add(new ArrayList<Integer>(subset));
+                results.add(new ArrayList<>(subset));
                 return;
             }
 
@@ -57,14 +57,14 @@ public class _17 {
             }
 
             Arrays.sort(input);
-            search(0, input, new ArrayList<Integer>());
+            search(0, input, new ArrayList<>());
             // always forget return statement
             return res;
         }
 
         private void search(int start, int[] input, List<Integer> path) {
             if (start == input.length) {
-                res.add(new ArrayList<Integer>(path));
+                res.add(new ArrayList<>(path));
             } else {
                 path.add(input[start]);
                 search(start + 1, input, path);

@@ -9,8 +9,8 @@ import java.util.Stack;
 // TODO: HARD copy
 public class _901 {
     public List<Integer> closestKValues(TreeNode root, double target, int k) {
-        Stack<TreeNode> next = new Stack<TreeNode>();
-        Stack<TreeNode> prev = new Stack<TreeNode>();
+        Stack<TreeNode> next = new Stack<>();
+        Stack<TreeNode> prev = new Stack<>();
         TreeNode node = root;
 
         // find the nodes closest to target
@@ -24,7 +24,7 @@ public class _901 {
             }
         }
 
-        List<Integer> ret = new LinkedList<Integer>();
+        List<Integer> ret = new LinkedList<>();
 
         while (ret.size() < k) {
             double distp = prev.isEmpty() ? Integer.MAX_VALUE : Math.abs(prev.peek().val - target);
