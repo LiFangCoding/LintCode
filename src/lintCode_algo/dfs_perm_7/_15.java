@@ -1,4 +1,4 @@
-package lintCode_algo.permuation_dfs_graph_7;
+package lintCode_algo.dfs_perm_7;
 
 import java.util.ArrayList;
 import java.util.Arrays;
