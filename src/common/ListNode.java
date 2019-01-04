@@ -7,4 +7,14 @@ public class ListNode {
     public ListNode(int val) {
         this.val = val;
     }
+
+    public String printList() {
+        String s = "";
+        ListNode cur = this;
+        while (cur != null) {
+            s += cur.val;
+            cur = cur.next;
+        }
+        return s;
+    }
 }
