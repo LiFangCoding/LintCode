@@ -16,20 +16,22 @@ public class _140 {
     //TODO
     //(ab)%c = (a%c)(b%c)%c
     public int fastPower(int a, int b, int n) {
-        if (a == 1) {
-            return 1 % b;
-        }
-
         if (n == 0) {
             return 1 % b;
         }
 
-        // long type since overflow.
-        long product = fastPower(a, b, n / 2);
-        product = (product * product) % b;
-        if (n % 2 == 1) {
-            product = (product * a) % b;
+        if (a == 1) {
+            return 1 % b;
         }
-        return (int) product;
+
+        long product = fastPower(a, b, n / 2);
+        long res = (product * product) % b;
+
+        if (n % 2 == 1) {
+            res = (res * (a % b)) % b;
+        }
+
+
+        return (int) res;
     }
 }
