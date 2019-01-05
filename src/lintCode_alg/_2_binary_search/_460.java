@@ -17,46 +17,40 @@ package lintCode_alg._2_binary_search;
  */
 public class _460 {
     public int[] kClosestNumbers(int[] A, int target, int k) {
-        // write your code here
         int[] res = new int[k];
         int idx = 0;
-        // corner case
-        if (k == 0) {
-            return res;
-        }
 
-        int mostNearIdx = mostNearIdx(A, target);
-        res[idx++] = A[mostNearIdx];
+        int nearestIdx = nearestIdx(A, target);
+        // The left, right index can be mostNear and its left or right.
+        int left = nearestIdx;
+        int right = nearestIdx + 1;
 
-        int i = mostNearIdx - 1;
-        int j = mostNearIdx + 1;
-
-        while (i >= 0 || j <= A.length - 1) {
+        while (left >= 0 || right <= A.length - 1) {
             if (idx == k) {
                 break;
             }
 
-            if (i >= 0 && j <= A.length - 1) {
-                if (dist(A, i, target) <= dist(A, j, target)) {
-                    res[idx++] = A[i--];
+            if (left >= 0 && right <= A.length - 1) {
+                if (isLeftSmall(A, left, right, target)) {
+                    res[idx++] = A[left--];
                 } else {
-                    res[idx++] = A[j++];
+                    res[idx++] = A[right++];
                 }
-            } else if (i >= 0) {
-                res[idx++] = A[i--];
+            } else if (left >= 0) {
+                res[idx++] = A[left--];
             } else {
-                res[idx++] = A[j++];
+                res[idx++] = A[right++];
             }
         }
 
         return res;
     }
 
-    private int dist(int[] A, int index, int target) {
-        return Math.abs(A[index] - target);
+    private boolean isLeftSmall(int[] A, int left, int right, int target) {
+        return Math.abs(A[left] - target) <= Math.abs(A[right] - target);
     }
 
-    private int mostNearIdx(int[] A, int target) {
+    private int nearestIdx(int[] A, int target) {
         int lo = 0;
         int hi = A.length - 1;
 
@@ -72,6 +66,10 @@ public class _460 {
             }
         }
 
-        return dist(A, hi, target) >= dist(A, lo, target) ? lo : hi;
+        if (isLeftSmall(A, lo, hi, target)) {
+            return lo;
+        }
+
+        return hi;
     }
 }
