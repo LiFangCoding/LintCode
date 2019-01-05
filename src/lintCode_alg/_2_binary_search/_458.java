@@ -7,22 +7,22 @@ public class _458 {
         }
 
         int len = nums.length;
-        int lo = 0;
-        int hi = len - 1;
+        int start = 0;
+        int end = len - 1;
 
-        while (lo + 1 < hi) {
-            int mid = lo + (hi - lo) / 2;
+        while (start + 1 < end) {
+            int mid = start + (end - start) / 2;
             if (nums[mid] <= target) {
-                lo = mid;
+                start = mid;
             } else {
-                hi = mid;
+                end = mid;
             }
         }
 
-        if (nums[hi] == target) {
-            return hi;
-        } else if (nums[lo] == target) {
-            return lo;
+        if (nums[end] == target) {
+            return end;
+        } else if (nums[start] == target) {
+            return start;
         }
 
         return -1;

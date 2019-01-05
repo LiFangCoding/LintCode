@@ -51,25 +51,25 @@ public class _460 {
     }
 
     private int nearestIdx(int[] A, int target) {
-        int lo = 0;
-        int hi = A.length - 1;
+        int start = 0;
+        int end = A.length - 1;
 
-        while (lo + 1 < hi) {
-            int mid = lo + (hi - lo) / 2;
+        while (start + 1 < end) {
+            int mid = start + (end - start) / 2;
 
             if (A[mid] == target) {
                 return mid;
             } else if (A[mid] < target) {
-                lo = mid;
+                start = mid;
             } else {
-                hi = mid;
+                end = mid;
             }
         }
 
-        if (isLeftSmall(A, lo, hi, target)) {
-            return lo;
+        if (isLeftSmall(A, start, end, target)) {
+            return start;
         }
 
-        return hi;
+        return end;
     }
 }

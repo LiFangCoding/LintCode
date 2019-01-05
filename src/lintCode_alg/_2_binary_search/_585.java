@@ -14,27 +14,27 @@ public class _585 {
             return -1;
         }
         int len = nums.length;
-        int lo = 0;
-        int hi = len - 1;
+        int start = 0;
+        int end = len - 1;
 
         // Do not consider 3 points in direction. It will be hard. Just compare mid with mid + 1.
-        while (lo + 1 < hi) {
-            int mid = lo + (hi - lo) / 2;
+        while (start + 1 < end) {
+            int mid = start + (end - start) / 2;
             if (nums[mid] > nums[mid - 1] && nums[mid + 1] > nums[mid]) {
-                lo = mid;
+                start = mid;
             } else if (nums[mid] > nums[mid + 1] && nums[mid - 1] > nums[mid]) {
-                hi = mid;
+                end = mid;
             } else if (isTop(nums, mid)) {
                 return nums[mid];
             }
         }
 
-        if (isTop(nums, lo)) {
-            return nums[lo];
+        if (isTop(nums, start)) {
+            return nums[start];
         }
 
-        if (isTop(nums, hi)) {
-            return nums[hi];
+        if (isTop(nums, end)) {
+            return nums[end];
         }
 
         return -1;
