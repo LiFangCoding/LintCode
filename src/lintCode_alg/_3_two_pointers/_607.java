@@ -19,10 +19,6 @@ public class _607 {
         map.put(num, map.getOrDefault(num, 0) + 1);
     }
 
-    /**
-     * @param val: An integer
-     * @return: Find if there exists any pair of numbers which sum is equal to the value.
-     */
     // T: O(n)
     // S: O(n)
     public boolean find(int val) {
