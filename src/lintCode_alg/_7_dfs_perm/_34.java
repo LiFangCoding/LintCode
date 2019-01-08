@@ -15,7 +15,6 @@ import java.util.ArrayList;
 public class _34 {
 
     public int totalNQueens(int n) {
-        // write your code here
         if (n == 0) {
             return 0;
         }

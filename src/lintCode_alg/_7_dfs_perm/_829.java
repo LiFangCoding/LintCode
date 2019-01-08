@@ -20,10 +20,10 @@ import java.util.Set;
  */
 public class _829 {
     public boolean wordPatternMatch(String s, String t) {
-        // write your code here
         if (s == null || t == null) {
             return false;
         }
+
         Map<Character, String> map = new HashMap<>();
         Set<String> set = new HashSet<>();
         return match(s, t, map, set);

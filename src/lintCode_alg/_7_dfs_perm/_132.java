@@ -49,6 +49,23 @@ public class _132 {
     public int[] dx = {1, 0, -1, 0};
     public int[] dy = {0, 1, 0, -1};
 
+    public List<String> wordSearchII(char[][] board, List<String> words) {
+        List<String> results = new ArrayList<String>();
+
+        TrieTree tree = new TrieTree(new TrieNode());
+        for (String word : words) {
+            tree.insert(word);
+        }
+
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
+                search(board, i, j, tree.root, results);
+            }
+        }
+
+        return results;
+    }
+
     public void search(char[][] board,
                        int x,
                        int y,
@@ -86,23 +103,6 @@ public class _132 {
         }
 
         return board[x][y] != 0;
-    }
-
-    public List<String> wordSearchII(char[][] board, List<String> words) {
-        List<String> results = new ArrayList<String>();
-
-        TrieTree tree = new TrieTree(new TrieNode());
-        for (String word : words) {
-            tree.insert(word);
-        }
-
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board[i].length; j++) {
-                search(board, i, j, tree.root, results);
-            }
-        }
-
-        return results;
     }
 
     class TrieNode {

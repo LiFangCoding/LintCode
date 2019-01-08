@@ -21,7 +21,6 @@ import java.util.List;
  */
 public class _16 {
     public List<List<Integer>> permute(int[] input) {
-        // write your code here
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(input);
 

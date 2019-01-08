@@ -32,7 +32,6 @@ import java.util.List;
  */
 public class _33 {
     public List<List<String>> solveNQueens(int n) {
-        // write your code here
         List<List<String>> res = new ArrayList<>();
 
         search(0, n, new ArrayList<>(), res);

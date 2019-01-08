@@ -23,7 +23,6 @@ import java.util.Map;
 public class _425 {
     public static class Sol1 {
         public List<String> letterCombinations(String digits) {
-            // write your code here
             String[] phone = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
 
             List<String> res = new ArrayList<>();

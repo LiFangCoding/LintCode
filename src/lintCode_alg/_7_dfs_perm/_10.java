@@ -14,7 +14,6 @@ import java.util.List;
  */
 public class _10 {
     public List<String> stringPermutation2(String str) {
-        // write your code here
         List<String> res = new ArrayList<>();
         char[] chars = str.toCharArray();
         Arrays.sort(chars);
@@ -32,6 +31,7 @@ public class _10 {
                     continue;
                 }
 
+                //cannot select one if previous one is not selected
                 if (i > 0 && chars[i] == chars[i - 1] && !marked[i - 1]) {
                     continue;
                 }

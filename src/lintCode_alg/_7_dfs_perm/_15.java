@@ -25,13 +25,11 @@ import java.util.List;
 
 public class _15 {
     public List<List<Integer>> permute(int[] input) {
-        // write your code here
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(input);
 
         search(0, input, new boolean[input.length], new ArrayList<>(), res);
         return res;
-
     }
 
     private void search(int start, int[] input, boolean[] marked, ArrayList<Integer> path, List<List<Integer>> res) {
