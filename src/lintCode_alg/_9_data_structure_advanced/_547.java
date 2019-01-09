@@ -1,6 +1,6 @@
 package lintCode_alg._9_data_structure_advanced;
 
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * Given two arrays, write a function to compute their intersection.
@@ -17,38 +17,66 @@ import java.util.Arrays;
 public class _547 {
     public static class Sol1_sortAndMerge {
         //T: O(nlogn) + O(mlogm) + O(min(m, n))
-        public int[] intersection(int[] nums1, int[] nums2) {
+        public int[] intersection(int[] left, int[] right) {
             // write your code here
-            Arrays.sort(nums1);
-            Arrays.sort(nums2);
+            if (left == null || right == null) {
+                return null;
+            }
+
+            List<Integer> resList = new ArrayList<>();
+
+            Arrays.sort(left);
+            Arrays.sort(right);
 
             int i = 0, j = 0;
-            int[] temp = new int[nums1.length];
-            int index = 0;
-            while (i < nums1.length && j < nums2.length) {
-                //Intersesion no duplicate
-                if (nums1[i] == nums2[j]) {
-                    int sameVal = nums1[i];
-                    if (index == 0) {
-                        temp[index++] = sameVal;
-                    } else if (temp[index - 1] != nums1[i]) {
-                        temp[index++] = nums1[i];
-                    }
+            while (i < left.length && j < right.length) {
+                //Intersesion no duplicate. So for example, if left index is duplication val, no need to compare it.
+                if (i != 0 && left[i] == left[i - 1]) {
+                    i++;
+                    continue;
+                }
+
+                if (j != 0 && right[j] == right[j - 1]) {
+                    j++;
+                    continue;
+                }
+
+                if (left[i] == right[j]) {
+                    resList.add(left[i]);
                     i++;
                     j++;
-                } else if (nums1[i] < nums2[j]) {
+                } else if (left[i] < right[j]) {
                     i++;
                 } else {
                     j++;
                 }
             }
 
-            int[] result = new int[index];
-            for (int k = 0; k < index; k++) {
-                result[k] = temp[k];
+            return resList.stream().mapToInt(x -> x).toArray();
+        }
+    }
+
+    public static class Sol2_hashMap {
+        public int[] intersection(int[] left, int[] right) {
+            if (left == null || right == null) {
+                return null;
             }
 
-            return result;
+            List<Integer> res = new ArrayList<>();
+
+            Set<Integer> set = new HashSet<>();
+            for (int i : left) {
+                set.add(i);
+            }
+
+            for (int i : right) {
+                if (set.contains(i)) {
+                    res.add(i);
+                    set.remove(i);
+                }
+            }
+
+            return res.stream().mapToInt(x -> x).toArray();
         }
     }
 }
