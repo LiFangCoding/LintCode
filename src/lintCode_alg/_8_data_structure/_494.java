@@ -25,9 +25,6 @@ public class _494 {
         qAdd.add(x);
     }
 
-    /*
-     * @return: nothing
-     */
     public void pop() {
         // write your code here
         // This is where has problem
@@ -47,9 +44,6 @@ public class _494 {
         qPop = temp;
     }
 
-    /*
-     * @return: An integer
-     */
     public int top() {
         // write your code here
         transfer();
@@ -59,9 +53,6 @@ public class _494 {
         return res;
     }
 
-    /*
-     * @return: True if the stack is empty
-     */
     public boolean isEmpty() {
         // write your code here
         return qAdd.size() == 0;

@@ -14,6 +14,14 @@ import java.util.Map;
  * 不使用额外的存储空间。
  */
 public class _209 {
+    //TODO:
+    class Sol_challenge {
+        public char firstUniqChar(String str) {
+            // Write your code here
+            return '0';
+        }
+    }
+
     class Sol1 {
         public char firstUniqChar(String str) {
             // Write your code here
