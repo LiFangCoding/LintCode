@@ -34,8 +34,6 @@ public class _944 {
         System.out.println("prefix sum is \n  " + Arrays.deepToString(prefixsum));
     }
 
-    ;
-
     /**
      * @param matrix: the given matrix
      * @return: the largest possible sum
