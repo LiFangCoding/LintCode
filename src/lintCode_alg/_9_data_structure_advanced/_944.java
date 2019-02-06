@@ -77,6 +77,7 @@ public class _944 {
         return max;
     }
 
+    // This is for the compression part.
     private int[] compression(int[][] matrix, int up, int down, int[][] prefixColSum) {
         int[] arr = new int[m];
         for (int i = 0; i < m; i++) {
