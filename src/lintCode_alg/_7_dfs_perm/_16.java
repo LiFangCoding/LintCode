@@ -26,7 +26,6 @@ public class _16 {
 
         search(0, input, new boolean[input.length], new ArrayList<>(), res);
         return res;
-
     }
 
     private void search(int start, int[] input, boolean[] marked, ArrayList<Integer> path, List<List<Integer>> res) {
