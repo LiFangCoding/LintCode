@@ -21,7 +21,7 @@ public class _539 {
             int len = nums.length;
             // This is to say left is the left part of array that is not 0.
             int left = 0;
-            int right = 0;
+            int right;
 
             for (right = 0; right < len; right++) {
                 if (nums[right] != 0) {
@@ -47,7 +47,7 @@ public class _539 {
             }
 
             int left = 0;
-            int right = 0;
+            int right;
 
             while (true) {
                 // find index is 0.

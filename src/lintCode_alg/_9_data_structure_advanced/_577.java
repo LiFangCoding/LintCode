@@ -100,7 +100,7 @@ public class _577 {
     public class Sol_minHeap {
         public List<Interval> mergeKSortedIntervalLists(List<List<Interval>> intervals) {
             if (intervals == null || intervals.isEmpty()) {
-                return new ArrayList<Interval>();
+                return new ArrayList<>();
             }
 
             // return mergeHelper_v1_minHeap(intervals);
@@ -144,7 +144,7 @@ public class _577 {
         public List<Interval> mergeKSortedIntervalLists(List<List<Interval>> intervals) {
             // write your code here
             if (intervals == null || intervals.isEmpty()) {
-                return new ArrayList<Interval>();
+                return new ArrayList<>();
             }
 
             // return mergeHelper_v1_minHeap(intervals);
@@ -167,7 +167,7 @@ public class _577 {
     public class Sol_Non_Recursive {
         public List<Interval> mergeKSortedIntervalLists(List<List<Interval>> intervals) {
             if (intervals == null || intervals.isEmpty()) {
-                return new ArrayList<Interval>();
+                return new ArrayList<>();
             }
 
             // return mergeHelper_v1_minHeap(intervals);

@@ -9,12 +9,12 @@ public class ListNode {
     }
 
     public String printList() {
-        String s = "";
+        StringBuilder s = new StringBuilder();
         ListNode cur = this;
         while (cur != null) {
-            s += cur.val;
+            s.append(cur.val);
             cur = cur.next;
         }
-        return s;
+        return s.toString();
     }
 }

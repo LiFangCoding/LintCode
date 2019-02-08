@@ -42,7 +42,8 @@ public class _839 {
     }
 
     private void merge(List<Interval> res, Interval inter) {
-        if (res == null || res.size() == 0) {
+        if (res.size() == 0) {
+            assert res != null;
             res.add(inter);
         }
 
@@ -52,7 +53,7 @@ public class _839 {
         //last start always less than inter start.
         if (inter.start > last.end) {
             res.add(inter);
-        } else if (inter.start <= last.end) {
+        } else {
             last.end = Math.max(inter.end, last.end);
         }
     }

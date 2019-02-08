@@ -82,9 +82,7 @@ public class _75 {
 
         private boolean isPeak(int[] A, int i) {
             if (i - 1 >= 0 && i + 1 <= A.length - 1) {
-                if (A[i] > A[i - 1] && A[i] > A[i + 1]) {
-                    return true;
-                }
+                return A[i] > A[i - 1] && A[i] > A[i + 1];
             }
 
             return false;

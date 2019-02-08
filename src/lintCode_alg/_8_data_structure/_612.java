@@ -20,11 +20,11 @@ public class _612 {
     public static class sol1_PQ {
         public Point[] kClosest(Point[] points, Point origin, int k) {
             // Write your code here
-            PriorityQueue<Point> pq = new PriorityQueue<Point>(k, new PointComparator(origin));
+            PriorityQueue<Point> pq = new PriorityQueue<>(k, new PointComparator(origin));
 
             // maxpq keep the small ks.
-            for (int i = 0; i < points.length; i++) {
-                pq.add(points[i]);
+            for (Point point : points) {
+                pq.add(point);
                 if (pq.size() > k) {
                     pq.remove();
                 }

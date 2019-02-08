@@ -39,7 +39,7 @@ public class _178 {
   }
 
   private int bfsConnectedNum(ArrayList<Integer>[] graph, int s) {
-    Queue<Integer> q = new LinkedList();
+    Queue<Integer> q = new LinkedList<>();
     Set<Integer> marked = new HashSet<>();
 
     q.add(s);

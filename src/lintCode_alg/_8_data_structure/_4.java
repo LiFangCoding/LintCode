@@ -64,14 +64,14 @@ public class _4 {
         //Space: O(n)
         // Important: cannot use the int value. Since will have overflow here.
         public int nthUglyNumber(int n) {
-            PriorityQueue<Long> pq = new PriorityQueue();
+            PriorityQueue<Long> pq = new PriorityQueue<>();
             Set<Long> set = new HashSet<>();
 
             //avoid magic number. Put in an array.
-            Long[] factors = {Long.valueOf(2), Long.valueOf(3), Long.valueOf(5)};
+            Long[] factors = {2L, 3L, 5L};
             int count = 1;
-            pq.add(Long.valueOf(1));
-            set.add(Long.valueOf(1));
+            pq.add(1L);
+            set.add(1L);
             Long res = null;
 
             //here set is not ordered. So cannot determine the nth value when pq size is n.

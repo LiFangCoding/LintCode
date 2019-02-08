@@ -50,7 +50,7 @@ public class _132 {
     public int[] dy = {0, 1, 0, -1};
 
     public List<String> wordSearchII(char[][] board, List<String> words) {
-        List<String> results = new ArrayList<String>();
+        List<String> results = new ArrayList<>();
 
         TrieTree tree = new TrieTree(new TrieNode());
         for (String word : words) {
@@ -111,7 +111,7 @@ public class _132 {
 
         public TrieNode() {
             word = null;
-            children = new HashMap<Character, TrieNode>();
+            children = new HashMap<>();
         }
     }
 

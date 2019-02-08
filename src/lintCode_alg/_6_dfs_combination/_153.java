@@ -38,7 +38,6 @@ public class _153 {
         if (target == 0) {
             res.add(new ArrayList<>(path));
         } else if (target < 0) {
-            return;
         } else {
             if (start >= input.length) {
                 return;

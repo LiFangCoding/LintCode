@@ -2,10 +2,7 @@ package lintCode_alg._8_data_structure;
 
 import common.ListNode;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * Merge k sorted linked lists and return it as one sorted list.
@@ -85,7 +82,7 @@ public class _104 {
                 return null;
             }
 
-            Queue<ListNode> pq = new PriorityQueue<>(lists.size(), (a, b) -> a.val - b.val);
+            Queue<ListNode> pq = new PriorityQueue<>(lists.size(), Comparator.comparingInt(a -> a.val));
 
             for (ListNode node : lists) {
                 // node will not be null.
@@ -119,7 +116,7 @@ public class _104 {
             }
 
             while (lists.size() > 1) {
-                List<ListNode> new_lists = new ArrayList<ListNode>();
+                List<ListNode> new_lists = new ArrayList<>();
                 for (int i = 0; i + 1 < lists.size(); i += 2) {
                     ListNode merged_list = merge2(lists.get(i), lists.get(i + 1));
                     new_lists.add(merged_list);
