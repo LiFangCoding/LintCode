@@ -1,6 +1,6 @@
 package lintCode_alg._8_data_structure;
 
-import common.ListNode;
+import common.NodeClass.ListNode;
 
 import java.util.*;
 

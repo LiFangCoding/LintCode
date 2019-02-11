@@ -1,4 +1,4 @@
-package common;
+package common.NodeClass;
 
 import java.util.ArrayList;
 

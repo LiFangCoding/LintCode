@@ -1,6 +1,6 @@
 package lintCode_alg._4_bfs.Required;
 
-import common.DirectedGraphNode;
+import common.NodeClass.DirectedGraphNode;
 
 import java.util.*;
 

@@ -1,6 +1,6 @@
 package lintCode_alg._3_two_pointers;
 
-import common.ListNode;
+import common.NodeClass.ListNode;
 
 /**
  * Find the middle node of a linked list.

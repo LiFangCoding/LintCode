@@ -1,6 +1,6 @@
 package lintCode_alg._4_bfs.Required;
 
-import common.TreeNode;
+import common.NodeClass.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

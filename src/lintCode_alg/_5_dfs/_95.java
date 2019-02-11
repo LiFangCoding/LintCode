@@ -1,6 +1,6 @@
 package lintCode_alg._5_dfs;
 
-import common.TreeNode;
+import common.NodeClass.TreeNode;
 
 /**
  * Given a binary tree, determine if it is a valid binary search tree (BST).

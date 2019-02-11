@@ -1,6 +1,6 @@
 package leetcode_contest.contest122;
 
-import common.TreeNode;
+import common.NodeClass.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Collections;

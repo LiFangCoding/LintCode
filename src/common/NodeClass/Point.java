@@ -1,4 +1,4 @@
-package common;
+package common.NodeClass;
 
 public class Point {
     public int x;

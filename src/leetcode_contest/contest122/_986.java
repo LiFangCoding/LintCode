@@ -1,6 +1,6 @@
 package leetcode_contest.contest122;
 
-import common.Interval;
+import common.NodeClass.Interval;
 
 import java.util.ArrayList;
 import java.util.List;

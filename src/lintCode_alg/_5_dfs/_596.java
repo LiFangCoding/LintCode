@@ -1,6 +1,6 @@
 package lintCode_alg._5_dfs;
 
-import common.TreeNode;
+import common.NodeClass.TreeNode;
 
 /**
  * Given a binary tree, find the subtree with minimum sum. Return the root of the subtree.

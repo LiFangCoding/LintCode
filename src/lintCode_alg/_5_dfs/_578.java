@@ -1,6 +1,6 @@
 package lintCode_alg._5_dfs;
 
-import common.TreeNode;
+import common.NodeClass.TreeNode;
 
 /**
  * Given the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the two

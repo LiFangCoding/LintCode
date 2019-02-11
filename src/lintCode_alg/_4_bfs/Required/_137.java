@@ -1,6 +1,6 @@
 package lintCode_alg._4_bfs.Required;
 
-import common.UndirectedGraphNode;
+import common.NodeClass.UndirectedGraphNode;
 
 import java.util.*;
 

@@ -1,6 +1,6 @@
 package lintCode_alg._9_data_structure_advanced;
 
-import common.Interval;
+import common.NodeClass.Interval;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -142,7 +142,6 @@ public class _577 {
 
     public class Sol_Divide_Conquer {
         public List<Interval> mergeKSortedIntervalLists(List<List<Interval>> intervals) {
-            // write your code here
             if (intervals == null || intervals.isEmpty()) {
                 return new ArrayList<>();
             }

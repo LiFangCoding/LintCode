@@ -1,6 +1,6 @@
 package lintCode_alg._5_dfs;
 
-import common.TreeNode;
+import common.NodeClass.TreeNode;
 
 /**
  * Given a non-empty binary search tree and a target value, find the value in the BST that is

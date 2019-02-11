@@ -1,6 +1,6 @@
 package lintCode_alg._5_dfs;
 
-import common.TreeNode;
+import common.NodeClass.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

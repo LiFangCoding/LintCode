@@ -1,6 +1,6 @@
 package lintCode_alg._8_data_structure;
 
-import common.Point;
+import common.NodeClass.Point;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

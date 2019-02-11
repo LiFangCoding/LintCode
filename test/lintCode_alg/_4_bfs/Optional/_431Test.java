@@ -1,6 +1,6 @@
 package lintCode_alg._4_bfs.Optional;
 
-import common.UndirectedGraphNode;
+import common.NodeClass.UndirectedGraphNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

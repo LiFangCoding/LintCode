@@ -1,6 +1,6 @@
 package lintCode_alg._9_data_structure_advanced;
 
-import common.Interval;
+import common.NodeClass.Interval;
 
 import java.util.ArrayList;
 import java.util.List;

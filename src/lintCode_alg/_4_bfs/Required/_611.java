@@ -1,6 +1,6 @@
 package lintCode_alg._4_bfs.Required;
 
-import common.Point;
+import common.NodeClass.Point;
 
 import java.util.LinkedList;
 import java.util.Queue;

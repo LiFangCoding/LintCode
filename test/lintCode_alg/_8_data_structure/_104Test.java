@@ -1,6 +1,6 @@
 package lintCode_alg._8_data_structure;
 
-import common.ListNode;
+import common.NodeClass.ListNode;
 import lintCode_alg._8_data_structure._104.Sol1_DivideConquer;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

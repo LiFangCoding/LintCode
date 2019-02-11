@@ -1,6 +1,6 @@
 package lintCode_alg._5_dfs;
 
-import common.TreeNode;
+import common.NodeClass.TreeNode;
 
 /**
  * Flatten a binary tree to a fake "linked list" in pre-order traversal.
