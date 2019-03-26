@@ -29,7 +29,7 @@ public class _138 {
                 break;
             }
             if (map.containsKey(sum)) {
-                // Need to add 1
+                // index start from i + 1
                 res.add(map.get(sum) + 1);
                 res.add(i);
                 break;

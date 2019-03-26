@@ -18,18 +18,18 @@ public class _64 {
         int i = m - 1;
         int j = n - 1;
 
-        while (i >= 0 || j >= 0) {
-            if (i >= 0 && j >= 0) {
-                if (A[i] > B[j]) {
-                    A[cur--] = A[i--];
-                } else {
-                    A[cur--] = B[j--];
-                }
-            } else if (i >= 0) {
-                break;
-            } else if (j >= 0) {
+        // put from tail to head
+        while (i >= 0 && j >= 0) {
+            if (A[i] > B[j]) {
+                A[cur--] = A[i--];
+            } else {
                 A[cur--] = B[j--];
             }
+        }
+
+        //if A has remaining elements, keep it. B has left elements, fill in A
+        while (j >= 0) {
+            A[cur--] = B[j--];
         }
     }
 }
