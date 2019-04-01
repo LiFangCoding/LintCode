@@ -1,22 +1,40 @@
 package Princeton_Algo.Graph;
 
+import edu.princeton.cs.algs4.Bag;
 import edu.princeton.cs.algs4.In;
 
 public class Graph {
-    Graph(int V) {
+    private final int V;
+    private Bag<Integer>[] adj;
 
+    public Graph(int V) {
+        this.V = V;
+        adj = (Bag<Integer>[]) new Bag[V];
+        for (int v = 0; v < V; v++) {
+            adj[v] = new Bag<Integer>();
+        }
     }
 
     Graph(In in) {
 
     }
 
-    void addEdge(int v, int w) {
-
+    public static int degree(Graph G, int v) {
+        int degree = 0;
+        for (int w : G.adj(v)) {
+            degree++;
+        }
+        return degree;
     }
 
-    Iterable<Integer> adj(int v) {
-
+    public static int maxDegree(Graph G) {
+        int max = 0;
+        for (int v = 0; v < G.V(); v++) {
+            if (degree(G, v) > max) {
+                max = degree(G, v);
+            }
+        }
+        return max;
     }
 
     int V() {
@@ -30,4 +48,31 @@ public class Graph {
     String toString() {
 
     }
+
+    public static double averageDegree(Graph G) {
+        return 2.0 * G.E() / G.V();
+    }
+
+    public static int numberOfSelfLoops(Graph G) {
+        int count = 0;
+        for (int v = 0; v < G.V(); v++) {
+            for (int w : G.adj(v)) {
+                if (v == w) {
+                    count++;
+                }
+            }
+        }
+        return count / 2;
+    }
+
+    public void addEdge(int v, int w) {
+        adj[v].add(w);
+        adj[w].add(v);
+    }
+
+    Iterable<Integer> adj(int v) {
+        return adj[v];
+    }
+
+
 }
