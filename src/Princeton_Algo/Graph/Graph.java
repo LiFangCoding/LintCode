@@ -1,7 +1,6 @@
 package Princeton_Algo.Graph;
 
 import edu.princeton.cs.algs4.Bag;
-import edu.princeton.cs.algs4.In;
 
 public class Graph {
     private final int V;
@@ -13,10 +12,6 @@ public class Graph {
         for (int v = 0; v < V; v++) {
             adj[v] = new Bag<Integer>();
         }
-    }
-
-    Graph(In in) {
-
     }
 
     public static int degree(Graph G, int v) {
