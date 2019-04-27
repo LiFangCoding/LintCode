@@ -17,17 +17,17 @@ public class _642 {
         /*
          * @param size: An integer
          */
-        public MovingAverage(int size) {
-            // do intialization if necessary
-        }
-
-        /*
-         * @param val: An integer
-         * @return:
-         */
-        public double next(int val) {
-            // write your code here
-
-        }
+//        public MovingAverage(int size) {
+//            // do intialization if necessary
+//        }
+//
+//        /*
+//         * @param val: An integer
+//         * @return:
+//         */
+//        public double next(int val) {
+//            // write your code here
+//
+//        }
     }
 }
