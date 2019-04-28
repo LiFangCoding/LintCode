@@ -5,7 +5,9 @@ public class _5_ComputeXMultiYWithoutArith {
     /**
      * return the multiply of x and y withour arithmetic
      * Iterate through each bit of x, and then can move the y to the 2 ^ k * y, then we can get the
-     *
+     * O(n^2)
+     * n is number of bits need to represent the operands.
+     * Since we do n additions to perform a single multiplication. Total is O(n ^ 2)
      * @param x
      * @param y
      * @return
@@ -24,6 +26,13 @@ public class _5_ComputeXMultiYWithoutArith {
         return sum;
     }
 
+    /**
+     * O(n)
+     *
+     * @param a
+     * @param b
+     * @return
+     */
     private static long add(long a, long b) {
         long sum = 0, carryin = 0, k = 1, tempA = a, tempB = b;
         while (tempA != 0 || tempB != 0) {
