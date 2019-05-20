@@ -1,10 +1,9 @@
 package epi_book._4_primitive_types;
 
 public class _6_ComputeXDivY {
-
     /**
-     * Given two positive integers, compute quotient. Using only addion, substraction and shifting operator.
      * O(n)
+     * Given two positive integers, compute quotient. Using only addion, substraction and shifting operator.
      * Brute force is to substract y from x until remains is less than y.
      * Complexity is high. eg: when y = 1 and x = 2 ^ 31 -1, it will be 2^31 -1.
      * A better is to try and get more work done in each iteration.

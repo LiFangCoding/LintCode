@@ -1,10 +1,7 @@
 package epi_book._4_primitive_types;
 
-import org.jetbrains.annotations.Contract;
-
 public class PrimitivwUtils {
 
-    @Contract(pure = true)
     public static short countBits(int x) {
         short numBits = 0;
         while (x != 0) {

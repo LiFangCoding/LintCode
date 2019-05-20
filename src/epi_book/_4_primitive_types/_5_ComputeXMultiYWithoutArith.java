@@ -28,7 +28,6 @@ public class _5_ComputeXMultiYWithoutArith {
 
     /**
      * O(n)
-     *
      * @param a
      * @param b
      * @return
