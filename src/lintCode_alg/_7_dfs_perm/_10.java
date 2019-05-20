@@ -18,12 +18,12 @@ public class _10 {
         char[] chars = str.toCharArray();
         Arrays.sort(chars);
 
-        search(chars, 0, new boolean[chars.length], "", res);
+        search(chars, new boolean[chars.length], "", res);
         return res;
     }
 
-    private void search(char[] chars, int start, boolean[] marked, String path, List<String> res) {
-        if (start == chars.length) {
+    private void search(char[] chars, boolean[] marked, String path, List<String> res) {
+        if (path.length() == chars.length) {
             res.add(path);
         } else {
             for (int i = 0; i < chars.length; i++) {
@@ -37,7 +37,7 @@ public class _10 {
                 }
 
                 marked[i] = true;
-                search(chars, start + 1, marked, path + String.valueOf(chars[i]), res);
+                search(chars, marked, path + String.valueOf(chars[i]), res);
                 marked[i] = false;
             }
         }

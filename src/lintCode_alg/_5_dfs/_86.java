@@ -7,13 +7,13 @@ import java.util.Stack;
 /**
  * Design an iterator over a binary search tree with the following rules:
  *
- * <p>Elements are visited in ascending order (i.e. an in-order traversal) next() and hasNext()
+ * Elements are visited in ascending order (i.e. an in-order traversal) next() and hasNext()
  * queries run in O(1) time in average. Example For the following binary search tree, in-order
  * traversal by using iterator is [1, 6, 10, 11, 12]
  *
- * <p>10 / \ 1 11 \ \ 6 12 Challenge Extra memory usage O(h), h is the height of the tree.
+ * 10 / \ 1 11 \ \ 6 12 Challenge Extra memory usage O(h), h is the height of the tree.
  *
- * <p>Super Star: Extra memory usage O(1)
+ * Super Star: Extra memory usage O(1)
  */
 public class _86 {
     public static class BSTIterator {

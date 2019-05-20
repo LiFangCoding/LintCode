@@ -10,32 +10,31 @@ import common.NodeClass.TreeNode;
  */
 public class _93 {
     public boolean isBalanced(TreeNode root) {
-        // write your code here
-        return getHandB(root).isB;
+        return getResult(root).isBalanced;
     }
 
-    private Rt getHandB(TreeNode node) {
+    private Result getResult(TreeNode node) {
         if (node == null) {
-            return new Rt(0, true);
+            return new Result(0, true);
         }
 
-        Rt left = getHandB(node.left);
-        Rt right = getHandB(node.right);
+        Result left = getResult(node.left);
+        Result right = getResult(node.right);
 
-        if (!left.isB || !right.isB || Math.abs(left.h - right.h) > 1) {
-            return new Rt(-1, false);
+        if (!left.isBalanced || !right.isBalanced || Math.abs(left.h - right.h) > 1) {
+            return new Result(-1, false);
         }
 
-        return new Rt(Math.max(left.h, right.h) + 1, true);
+        return new Result(Math.max(left.h, right.h) + 1, true);
     }
 
-    class Rt {
+    class Result {
         int h;
-        boolean isB;
+        boolean isBalanced;
 
-        public Rt(int h, boolean isB) {
+        public Result(int h, boolean isBalanced) {
             this.h = h;
-            this.isB = isB;
+            this.isBalanced = isBalanced;
         }
     }
 }
