@@ -23,7 +23,7 @@ public class _582 {
         return search(s, wordDict);
     }
 
-    // Important: this is not combinational search. So no need to use void. And be care of the
+    // Important: this is not combinational _11_searching. So no need to use void. And be care of the
     // duplicate call.
     private List<String> search(String s, Set<String> dict) {
         List<String> res = new ArrayList<>();

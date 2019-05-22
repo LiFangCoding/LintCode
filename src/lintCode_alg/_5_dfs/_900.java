@@ -3,7 +3,7 @@ package lintCode_alg._5_dfs;
 import common.NodeClass.TreeNode;
 
 /**
- * Given a non-empty binary search tree and a target value, find the value in the BST that is
+ * Given a non-empty binary _11_searching tree and a target value, find the value in the BST that is
  * closest to the target.
  *
  * <p>Example Given root = {1}, target = 4.428571, return 1.
